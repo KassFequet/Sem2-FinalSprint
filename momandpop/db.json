@@ -1,0 +1,299 @@
+{
+  "products": [
+    
+    { 
+        "id": 1, 
+        "name": "2x4 Timber", 
+        "image": "https://via.placeholder.com/300x300?text=2x4+Timber", 
+        "price": 5.25, 
+        "description": "Standard 2x4 lumber for framing and general construction.", 
+        "quantity": 100 
+    },
+    { 
+        "id": 2, 
+        "name": "2x6 Timber", 
+        "image": "https://via.placeholder.com/300x300?text=2x6+Timber", 
+        "price": 6.75, 
+        "description": "Durable 2x6 lumber for construction and decking.", 
+        "quantity": 60 
+    },
+    { 
+        "id": 3, 
+        "name": "2x8 Timber", 
+        "image": "https://via.placeholder.com/300x300?text=2x8+Timber", 
+        "price": 8.00, 
+        "description": "Strong 2x8 lumber ideal for floor joists.", 
+        "quantity": 50 
+    },
+    { 
+        "id": 4, 
+        "name": "2x10 Timber", 
+        "image": "https://via.placeholder.com/300x300?text=2x10+Timber", 
+        "price": 9.50, 
+        "description": "Used in wide framing applications.", 
+        "quantity": 30 
+    },
+    { 
+        "id": 5, 
+        "name": "Sheathing Plywood", 
+        "image": "https://via.placeholder.com/300x300?text=Sheathing+Plywood", 
+        "price": 28.99, 
+        "description": "4x8 foot sheathing plywood, great for roofing and walls.", 
+        "quantity": 40 
+    },
+    { 
+        "id": 6, 
+        "name": "Hardwood Plywood", 
+        "image": "https://via.placeholder.com/300x300?text=Hardwood+Plywood", 
+        "price": 45.00, 
+        "description": "Premium hardwood plywood for cabinetry and furniture.", 
+        "quantity": 25 
+    },
+    { 
+        "id": 7, 
+        "name": "MDF Board", 
+        "image": "https://via.placeholder.com/300x300?text=MDF+Board", 
+        "price": 18.50, 
+        "description": "Smooth medium-density fiberboard for interior applications.", 
+        "quantity": 35 
+    },
+    { 
+        "id": 8, 
+        "name": "Hardwood Board", 
+        "image": "https://via.placeholder.com/300x300?text=Hardwood+Board", 
+        "price": 22.00, 
+        "description": "Solid hardwood board for premium wood projects.", 
+        "quantity": 20 
+    },
+
+    
+    { 
+        "id": 9, 
+        "name": "Chisel Variety Pack", 
+        "image": "https://via.placeholder.com/300x300?text=Chisel+Set", 
+        "price": 19.99, 
+        "description": "Set of 4 woodworking chisels with wooden handles.", 
+        "quantity": 15 
+    },
+    { 
+        "id": 10, 
+        "name": "Hand Saw", 
+        "image": "https://via.placeholder.com/300x300?text=Hand+Saw", 
+        "price": 14.99, 
+        "description": "Standard 20-inch hand saw for clean cuts.", 
+        "quantity": 25 
+    },
+    { 
+        "id": 11, 
+        "name": "Wood Glue", 
+        "image": "https://via.placeholder.com/300x300?text=Wood+Glue", 
+        "price": 6.50, 
+        "description": "Strong adhesive for wood projects.", 
+        "quantity": 35 
+    },
+    { 
+        "id": 12, 
+        "name": "Clamp (2-pack)", 
+        "image": "https://via.placeholder.com/300x300?text=Clamps", 
+        "price": 12.99, 
+        "description": "Set of 2 bar clamps for holding pieces together.", 
+        "quantity": 18 
+    },
+    { 
+        "id": 13, 
+        "name": "Axe", 
+        "image": "https://via.placeholder.com/300x300?text=Axe", 
+        "price": 39.99, 
+        "description": "Heavy-duty axe for chopping wood.", 
+        "quantity": 10 
+    },
+    { 
+        "id": 14, 
+        "name": "Tape Measure", 
+        "image": "https://via.placeholder.com/300x300?text=Tape+Measure", 
+        "price": 4.99, 
+        "description": "25-foot retractable steel tape measure.", 
+        "quantity": 50 
+    },
+    { 
+        "id": 15, 
+        "name": "Cordless Drill", 
+        "image": "https://via.placeholder.com/300x300?text=Drill", 
+        "price": 69.99, 
+        "description": "Cordless drill with charger and bits.", 
+        "quantity": 12 
+    },
+    { 
+        "id": 16, 
+        "name": "Orbital Sander", 
+        "image": "https://via.placeholder.com/300x300?text=Sander", 
+        "price": 54.99, 
+        "description": "Smooth surfaces quickly with this power sander.", 
+        "quantity": 8 
+    },
+    { 
+        "id": 17, 
+        "name": "Box of Nails", 
+        "image": "https://via.placeholder.com/300x300?text=Nails", 
+        "price": 3.49, 
+        "description": "1lb box of general-purpose nails.", 
+        "quantity": 70 
+    },
+    { 
+        "id": 18, 
+        "name": "Box of Screws", 
+        "image": "https://via.placeholder.com/300x300?text=Screws", 
+        "price": 4.49, 
+        "description": "100 count wood screws with flat head.", 
+        "quantity": 65 
+    },
+
+    
+    { 
+        "id": 19, 
+        "name": "Paint Brushes (3-Pack)", 
+        "image": "https://via.placeholder.com/300x300?text=Paint+Brushes", 
+        "price": 8.49, 
+        "description": "Various sizes for trim and walls.", 
+        "quantity": 40 
+    },
+    { 
+        "id": 20, 
+        "name": "Paint Tray Kit", 
+        "image": "https://via.placeholder.com/300x300?text=Paint+Tray", 
+        "price": 9.99, 
+        "description": "Tray, roller, and cover included.", 
+        "quantity": 20 
+    },
+    { 
+        "id": 21, 
+        "name": "Painter's Tape", 
+        "image": "https://via.placeholder.com/300x300?text=Painter%27s+Tape", 
+        "price": 5.75, 
+        "description": "1-inch wide blue painter's tape.", 
+        "quantity": 60 
+    },
+    { 
+        "id": 22, 
+        "name": "Interior Latex Paint (White)", 
+        "image": "https://via.placeholder.com/300x300?text=White+Paint", 
+        "price": 29.99, 
+        "description": "1 gallon of premium interior paint.", 
+        "quantity": 22 
+    },
+    { 
+        "id": 23, 
+        "name": "Wood Stain (Oak)", 
+        "image": "https://via.placeholder.com/300x300?text=Oak+Stain", 
+        "price": 12.99, 
+        "description": "Oil-based stain for interior/exterior wood.", 
+        "quantity": 15 
+    },
+    { 
+        "id": 24, 
+        "name": "Wood Stain (Walnut)", 
+        "image": "https://via.placeholder.com/300x300?text=Walnut+Stain", 
+        "price": 12.99, 
+        "description": "Rich walnut stain for wood furniture.", 
+        "quantity": 15 
+    },
+    { 
+        "id": 25, 
+        "name": "Drop Cloth", 
+        "image": "https://via.placeholder.com/300x300?text=Drop+Cloth", 
+        "price": 10.99, 
+        "description": "6x9 ft reusable canvas drop cloth.", 
+        "quantity": 30 
+    },
+
+    
+    { 
+        "id": 26, 
+        "name": "Trowel", 
+        "image": "https://via.placeholder.com/300x300?text=Trowel", 
+        "price": 7.49, 
+        "description": "Hand trowel with comfortable grip.", 
+        "quantity": 45 
+    },
+    { 
+        "id": 27, 
+        "name": "Garden Pick", 
+        "image": "https://via.placeholder.com/300x300?text=Pick", 
+        "price": 16.99, 
+        "description": "Small pickaxe for digging tough soil.", 
+        "quantity": 18 
+    },
+    { 
+        "id": 28, 
+        "name": "Garden Shears", 
+        "image": "https://via.placeholder.com/300x300?text=Shears", 
+        "price": 14.99, 
+        "description": "Sharp shears for pruning and trimming.", 
+        "quantity": 30 
+    },
+    { 
+        "id": 29, 
+        "name": "Mulch Bag", 
+        "image": "https://via.placeholder.com/300x300?text=Mulch", 
+        "price": 4.99, 
+        "description": "2 cubic feet of bark mulch.", 
+        "quantity": 50 
+    },
+    { 
+        "id": 30, 
+        "name": "Wood Trellis", 
+        "image": "https://via.placeholder.com/300x300?text=Trellis", 
+        "price": 19.99, 
+        "description": "Support climbing plants in your garden.", 
+        "quantity": 12 
+    },
+    { 
+        "id": 31, 
+        "name": "Wildflower Seed Mix", 
+        "image": "https://via.placeholder.com/300x300?text=Wildflowers", 
+        "price": 3.99, 
+        "description": "Colorful mix of wildflowers for garden beds.", 
+        "quantity": 75 
+    },
+    { 
+        "id": 32, 
+        "name": "Carrot Seeds", 
+        "image": "https://via.placeholder.com/300x300?text=Carrots", 
+        "price": 1.99, 
+        "description": "Organic carrots for spring planting.", 
+        "quantity": 120 
+    },
+    { 
+        "id": 33, 
+        "name": "Potato Seeds", "image": "https://via.placeholder.com/300x300?text=Potatoes", 
+        "price": 2.99, 
+        "description": "Seed potatoes for backyard gardens.", 
+        "quantity": 80 
+    },
+    { 
+        "id": 34, 
+        "name": "Tomato Seeds", 
+        "image": "https://via.placeholder.com/300x300?text=Tomatoes", 
+        "price": 2.49, 
+        "description": "Heirloom tomatoes for home gardening.", 
+        "quantity": 100 
+    },
+    { 
+        "id": 35, 
+        "name": "Onion Seeds", 
+        "image": "https://via.placeholder.com/300x300?text=Onions", 
+        "price": 2.29, 
+        "description": "Sweet onion seeds, easy to grow.", 
+        "quantity": 90 
+    },
+    { 
+        "id": 36, 
+        "name": "Mustard Greens Seeds", 
+        "image": "https://via.placeholder.com/300x300?text=Mustard+Greens", 
+        "price": 1.79, 
+        "description": "Zesty leafy greens for salads and stir-fry.", 
+        "quantity": 95 
+    }
+  ],
+  "cart": []
+}
