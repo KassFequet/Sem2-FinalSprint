@@ -19,7 +19,7 @@ const Header = () => {
           <img
             src={ovalLogo}
             alt="ovalLogo"
-            style={{ height: '100px', marginTop: '10px' }}
+            style={{ height: '100px', marginTop: '10px', marginLeft: '10px' }}
           />
         </div>
         <div style={{ display: 'flex', gap: '2rem' }}>
