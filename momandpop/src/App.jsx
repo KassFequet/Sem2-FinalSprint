@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Hello from './components/Hello';
+import ProductDetails from './pages/ProductDetails';
+import About from './pages/About';
 import './App.css';
 
 // ✅ Navigation bar
@@ -17,11 +19,20 @@ function App() {
 
   return (
     <>
-      <Navigation />  {/* ✅ Renders the nav bar at the top */}
-
+      <Navigation /> {/* ✅ Renders the nav bar at the top */}
       <Routes>
-        <Route path="/" element={<Hello name="Brendan" />} />
-        <Route path="/about" element={<About />} />
+        <Route
+          path="/"
+          element={<Hello name="Brendan" />}
+        />
+        <Route
+          path="/about"
+          element={<About />}
+        />
+        <Route
+          path="/products/:productId"
+          element={<ProductDetails />}
+        />
       </Routes>
     </>
   );
