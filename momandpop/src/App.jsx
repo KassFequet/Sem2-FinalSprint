@@ -1,17 +1,17 @@
 import { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import Hello from './components/Hello';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
 import ProductDetails from './pages/ProductDetails';
-import About from './pages/About';
+import Home from './pages/Home';
 import './App.css';
 
-// ✅ Navigation bar
-function Navigation() {
-  return (
-    <nav style={{ marginBottom: '1rem' }}>
-      <Link to="/">Home</Link> | <Link to="/about">About</Link>
-    </nav>
-  );
+// Missing Catalogue and Cart components
+function Catalogue() {
+  return <div>Catalogue Page</div>;
+}
+
+function Cart() {
+  return <div>Cart Page</div>;
 }
 
 function App() {
@@ -19,19 +19,19 @@ function App() {
 
   return (
     <>
-      <Navigation /> {/* ✅ Renders the nav bar at the top */}
+      <Header />
       <Routes>
         <Route
           path="/"
-          element={<Hello name="Brendan" />}
+          element={<Home />}
         />
         <Route
-          path="/about"
-          element={<About />}
+          path="/catalogue"
+          element={<Catalogue />}
         />
         <Route
-          path="/products/:productId"
-          element={<ProductDetails />}
+          path="/cart"
+          element={<Cart />}
         />
       </Routes>
     </>
