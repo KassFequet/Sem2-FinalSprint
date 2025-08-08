@@ -4,6 +4,7 @@ import Header from './components/Header';
 import ProductDetails from './pages/ProductDetails';
 import Home from './pages/Home';
 import './App.css';
+import Home from './pages/Home';
 
 // Missing Catalogue and Cart components
 function Catalogue() {
