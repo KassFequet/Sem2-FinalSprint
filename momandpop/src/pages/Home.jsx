@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import slideData from "../data/SlideData";
 import Slide from "../components/home/Slides";
+import { slideData } from "../components/home/Slides";
 import "../components/home/Home.css";
+import mompopgradient from "../images/Home/mompopgradient.png";
 
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -18,7 +19,6 @@ function Home() {
 
   return (
     <>
-      <p>Welcome to Mom's Garden & Pop's Workshop</p>
       <div className="slideContainer">
         {slideData.map((slide, index) =>
           index === currentSlide ? (
@@ -28,7 +28,7 @@ function Home() {
           </div>
 
           <div className="momAndPop">
-              <img src="../images/Home/mompopgradient.png" alt="Mom and Pop" />
+              <img src={mompopgradient} alt="Mom and Pop" />
           </div>
     </>
   );
