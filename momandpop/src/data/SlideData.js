@@ -9,28 +9,32 @@ const slideData = [
     id: 1,
     name: "Timber",
     image: slide1,
-    description: "Tough enough for your biggest projects.",
+    description:
+      "Tough enough for your biggest projects, beautiful enough for your finest work",
     link: "/placeholder/1",
   },
   {
     id: 2,
     name: "Wood Working Tools",
     image: slide2,
-    description: "Precision tools for makers.",
+    description:
+      "Turning every idea into a masterpiece, with precision you can trust every single time",
     link: "/placeholder/2",
   },
   {
     id: 3,
     name: "Paints & Stains",
     image: slide3,
-    description: "The final touch that makes your craft unforgettable.",
+    description:
+      "Bringing colour and character to your work, with beauty that lasts for years ahead",
     link: "/placeholder/3",
   },
   {
     id: 4,
     name: "Gardening Tools",
     image: slide4,
-    description: "Built for hands that grow beauty from the ground up.",
+    description:
+      "Helping you grow more with less effort, season after season without any worry",
     link: "/placeholder/4",
   },
   {
@@ -38,7 +42,7 @@ const slideData = [
     name: "Seeds",
     image: slide5,
     description:
-      "Vibrant blooms & bountiful harvests start with the right seeds.",
+      "What starts as a seedling today becomes tomorrow’s vibrant bloom and full harvest",
     link: "/placeholder/5",
   },
 ];

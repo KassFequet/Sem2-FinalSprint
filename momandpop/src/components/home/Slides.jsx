@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../home/Home.css";
+import "../../Home.css";
 import slideData from "../../data/SlideData"
 
 
@@ -12,7 +12,7 @@ function Slide({ slidePage }) {
         <h1>{product.name}</h1>
         <p>{product.description}</p>
         <Link to={product.link}>
-          <button>Show Now</button>
+          <button>Shop Now</button>
         </Link>
       </div>
     </div>
