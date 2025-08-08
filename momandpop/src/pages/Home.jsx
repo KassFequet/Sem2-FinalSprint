@@ -18,6 +18,7 @@ function Home() {
 
   return (
     <>
+      <p>Welcome to Mom's Garden & Pop's Workshop</p>
       <div className="slideContainer">
         {slideData.map((slide, index) =>
           index === currentSlide ? (
@@ -27,7 +28,7 @@ function Home() {
           </div>
 
           <div className="momAndPop">
-              <img src="/images/Home/mompopgradient.png" alt="Mom and Pop" />
+              <img src="../images/Home/mompopgradient.png" alt="Mom and Pop" />
           </div>
     </>
   );
