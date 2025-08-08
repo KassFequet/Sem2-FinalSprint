@@ -13,7 +13,7 @@ export default function ProductDetails() {
       try {
         setLoading(true);
         const response = await fetch(
-          `http://localhost:3001/products/${productId}`
+          `http://localhost:3000/products/${productId}`
         );
 
         if (!response.ok) {

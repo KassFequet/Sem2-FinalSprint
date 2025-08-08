@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Slide from "../components/home/Slides";
-import { slideData } from "../components/home/Slides";
+import slideData from "../data/SlideData";
 import "../components/home/Home.css";
 import mompopgradient from "../images/Home/mompopgradient.png";
 
