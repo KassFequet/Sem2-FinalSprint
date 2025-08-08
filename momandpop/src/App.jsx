@@ -20,21 +20,8 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
-        <Route
-          path="/catalogue"
-          element={<Catalogue />}
-        />
-        <Route
-          path="/cart"
-          element={<Cart />}
-        />
-      </Routes>
+      <Navigation />  {/* ✅ Renders the nav bar at the top */}
+      <Home />
     </>
   );
 }
