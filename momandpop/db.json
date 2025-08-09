@@ -1,298 +1,292 @@
 {
   "products": [
-    
-    { 
-        "id": 1, 
-        "name": "2x4 Timber", 
-        "image": "https://via.placeholder.com/300x300?text=2x4+Timber", 
-        "price": 5.25, 
-        "description": "Standard 2x4 lumber for framing and general construction.", 
-        "quantity": 100 
+    {
+      "id": 1,
+      "name": "2x4 Timber",
+      "image": "https://via.placeholder.com/300x300?text=2x4+Timber",
+      "price": 5.25,
+      "description": "Standard 2x4 lumber for framing and general construction. This versatile softwood lumber is perfect for building walls, floors, and roofs. Made from high-quality pine, it's kiln-dried to reduce warping and splitting. Ideal for both indoor and outdoor projects when properly treated. Meets all building code requirements for structural applications.",
+      "quantity": 100
     },
-    { 
-        "id": 2, 
-        "name": "2x6 Timber", 
-        "image": "https://via.placeholder.com/300x300?text=2x6+Timber", 
-        "price": 6.75, 
-        "description": "Durable 2x6 lumber for construction and decking.", 
-        "quantity": 60 
+    {
+      "id": 2,
+      "name": "2x6 Timber",
+      "image": "https://via.placeholder.com/300x300?text=2x6+Timber",
+      "price": 6.75,
+      "description": "Durable 2x6 lumber for construction and decking applications. This premium grade lumber offers excellent strength-to-weight ratio, making it perfect for floor joists, ceiling beams, and deck framing. The larger dimension provides superior load-bearing capacity compared to 2x4s. Pre-treated options available for outdoor use.",
+      "quantity": 60
     },
-    { 
-        "id": 3, 
-        "name": "2x8 Timber", 
-        "image": "https://via.placeholder.com/300x300?text=2x8+Timber", 
-        "price": 8.00, 
-        "description": "Strong 2x8 lumber ideal for floor joists.", 
-        "quantity": 50 
+    {
+      "id": 3,
+      "name": "2x8 Timber",
+      "image": "https://via.placeholder.com/300x300?text=2x8+Timber",
+      "price": 8.0,
+      "description": "Strong 2x8 lumber ideal for floor joists and structural beams. This heavy-duty lumber can span longer distances without additional support, making it perfect for large rooms and open floor plans. Excellent for load-bearing applications including headers, beams, and rafters. Kiln-dried for dimensional stability.",
+      "quantity": 50
     },
-    { 
-        "id": 4, 
-        "name": "2x10 Timber", 
-        "image": "https://via.placeholder.com/300x300?text=2x10+Timber", 
-        "price": 9.50, 
-        "description": "Used in wide framing applications.", 
-        "quantity": 30 
+    {
+      "id": 4,
+      "name": "2x10 Timber",
+      "image": "https://via.placeholder.com/300x300?text=2x10+Timber",
+      "price": 9.5,
+      "description": "Premium 2x10 lumber used in wide framing applications and heavy-duty construction. Perfect for floor joists in larger spans, providing exceptional strength and minimal deflection. Commonly used in commercial construction and large residential projects. This grade lumber ensures long-lasting performance in demanding structural situations.",
+      "quantity": 30
     },
-    { 
-        "id": 5, 
-        "name": "Sheathing Plywood", 
-        "image": "https://via.placeholder.com/300x300?text=Sheathing+Plywood", 
-        "price": 28.99, 
-        "description": "4x8 foot sheathing plywood, great for roofing and walls.", 
-        "quantity": 40 
+    {
+      "id": 5,
+      "name": "Sheathing Plywood",
+      "image": "https://via.placeholder.com/300x300?text=Sheathing+Plywood",
+      "price": 28.99,
+      "description": "High-quality 4x8 foot sheathing plywood, engineered for roofing and wall applications. This structural grade plywood provides excellent strength and weather resistance when used as subflooring, roof decking, or wall sheathing. Made with moisture-resistant adhesives and featuring smooth surface for easy installation.",
+      "quantity": 40
     },
-    { 
-        "id": 6, 
-        "name": "Hardwood Plywood", 
-        "image": "https://via.placeholder.com/300x300?text=Hardwood+Plywood", 
-        "price": 45.00, 
-        "description": "Premium hardwood plywood for cabinetry and furniture.", 
-        "quantity": 25 
+    {
+      "id": 6,
+      "name": "Hardwood Plywood",
+      "image": "https://via.placeholder.com/300x300?text=Hardwood+Plywood",
+      "price": 45.5,
+      "description": "Premium hardwood plywood featuring beautiful wood grain patterns and superior durability. Perfect for cabinet making, furniture construction, and high-end interior projects. This furniture-grade plywood offers excellent screw holding power and smooth finishing surface. Available in various species including oak, maple, and birch.",
+      "quantity": 25
     },
-    { 
-        "id": 7, 
-        "name": "MDF Board", 
-        "image": "https://via.placeholder.com/300x300?text=MDF+Board", 
-        "price": 18.50, 
-        "description": "Smooth medium-density fiberboard for interior applications.", 
-        "quantity": 35 
+    {
+      "id": 7,
+      "name": "Drywall",
+      "image": "https://via.placeholder.com/300x300?text=Drywall",
+      "price": 12.99,
+      "description": "Standard 4x8 foot drywall sheets perfect for interior wall and ceiling construction. This gypsum-based wallboard provides smooth, paintable surfaces for residential and commercial applications. Fire-resistant properties and excellent sound dampening qualities. Easy to cut, install, and finish with standard drywall tools and techniques.",
+      "quantity": 80
     },
-    { 
-        "id": 8, 
-        "name": "Hardwood Board", 
-        "image": "https://via.placeholder.com/300x300?text=Hardwood+Board", 
-        "price": 22.00, 
-        "description": "Solid hardwood board for premium wood projects.", 
-        "quantity": 20 
+    {
+      "id": 8,
+      "name": "Insulation",
+      "image": "https://via.placeholder.com/300x300?text=Insulation",
+      "price": 24.5,
+      "description": "High-performance fiberglass insulation rolls designed for thermal and acoustic control. R-13 rating provides excellent energy efficiency for 2x4 wall cavities. Made from recycled materials and safe for DIY installation. Reduces heating and cooling costs while improving indoor comfort. Unfaced insulation suitable for interior walls and floors.",
+      "quantity": 35
     },
-
-    
-    { 
-        "id": 9, 
-        "name": "Chisel Variety Pack", 
-        "image": "https://via.placeholder.com/300x300?text=Chisel+Set", 
-        "price": 19.99, 
-        "description": "Set of 4 woodworking chisels with wooden handles.", 
-        "quantity": 15 
+    {
+      "id": 9,
+      "name": "Roofing Shingles",
+      "image": "https://via.placeholder.com/300x300?text=Roofing+Shingles",
+      "price": 89.99,
+      "description": "Architectural asphalt shingles offering superior weather protection and curb appeal. These dimensional shingles feature a 25-year warranty and excellent wind resistance up to 110 mph. Available in multiple colors to complement any home style. Easy installation with standard roofing tools and techniques.",
+      "quantity": 45
     },
-    { 
-        "id": 10, 
-        "name": "Hand Saw", 
-        "image": "https://via.placeholder.com/300x300?text=Hand+Saw", 
-        "price": 14.99, 
-        "description": "Standard 20-inch hand saw for clean cuts.", 
-        "quantity": 25 
+    {
+      "id": 10,
+      "name": "Concrete Mix",
+      "image": "https://via.placeholder.com/300x300?text=Concrete+Mix",
+      "price": 4.25,
+      "description": "Premium concrete mix for sidewalks, driveways, and foundation work. This 80-pound bag yields approximately 0.6 cubic feet of finished concrete when mixed properly. Fast-setting formula reaches walking strength in 20-40 minutes. Perfect for fence posts, mailbox installations, and small concrete projects around the home.",
+      "quantity": 120
     },
-    { 
-        "id": 11, 
-        "name": "Wood Glue", 
-        "image": "https://via.placeholder.com/300x300?text=Wood+Glue", 
-        "price": 6.50, 
-        "description": "Strong adhesive for wood projects.", 
-        "quantity": 35 
+    {
+      "id": 11,
+      "name": "Galvanized Nails",
+      "image": "https://via.placeholder.com/300x300?text=Galvanized+Nails",
+      "price": 8.75,
+      "description": "Corrosion-resistant galvanized framing nails for outdoor and treated lumber applications. These 3.5-inch nails feature hot-dipped galvanized coating for maximum rust protection. Perfect for deck construction, fencing, and exterior framing projects. Smooth shank design provides excellent holding power in all wood types.",
+      "quantity": 200
     },
-    { 
-        "id": 12, 
-        "name": "Clamp (2-pack)", 
-        "image": "https://via.placeholder.com/300x300?text=Clamps", 
-        "price": 12.99, 
-        "description": "Set of 2 bar clamps for holding pieces together.", 
-        "quantity": 18 
+    {
+      "id": 12,
+      "name": "Wood Screws",
+      "image": "https://via.placeholder.com/300x300?text=Wood+Screws",
+      "price": 12.99,
+      "description": "High-quality wood screws with Phillips drive heads for versatile construction applications. These self-drilling screws eliminate the need for pilot holes in most softwoods. Yellow zinc coating provides corrosion resistance for interior and covered exterior use. Available in multiple lengths for various project requirements.",
+      "quantity": 150
     },
-    { 
-        "id": 13, 
-        "name": "Axe", 
-        "image": "https://via.placeholder.com/300x300?text=Axe", 
-        "price": 39.99, 
-        "description": "Heavy-duty axe for chopping wood.", 
-        "quantity": 10 
+    {
+      "id": 13,
+      "name": "PVC Pipe",
+      "image": "https://via.placeholder.com/300x300?text=PVC+Pipe",
+      "price": 6.49,
+      "description": "Schedule 40 PVC pipe perfect for plumbing, irrigation, and drainage applications. This 10-foot length of white PVC offers excellent chemical resistance and durability. Easy to cut and join with standard PVC fittings and cement. Meets ASTM standards for pressure and temperature ratings in residential applications.",
+      "quantity": 75
     },
-    { 
-        "id": 14, 
-        "name": "Tape Measure", 
-        "image": "https://via.placeholder.com/300x300?text=Tape+Measure", 
-        "price": 4.99, 
-        "description": "25-foot retractable steel tape measure.", 
-        "quantity": 50 
+    {
+      "id": 14,
+      "name": "Electrical Wire",
+      "image": "https://via.placeholder.com/300x300?text=Electrical+Wire",
+      "price": 45.99,
+      "description": "12-gauge Romex electrical wire suitable for 20-amp circuits in residential wiring. This 250-foot roll of copper wire features THHN insulation rated for 90°C applications. Perfect for outlets, lighting circuits, and appliance connections. Meets all NEC code requirements and local electrical standards for safe installation.",
+      "quantity": 30
     },
-    { 
-        "id": 15, 
-        "name": "Cordless Drill", 
-        "image": "https://via.placeholder.com/300x300?text=Drill", 
-        "price": 69.99, 
-        "description": "Cordless drill with charger and bits.", 
-        "quantity": 12 
+    {
+      "id": 15,
+      "name": "Paint Primer",
+      "image": "https://via.placeholder.com/300x300?text=Paint+Primer",
+      "price": 28.99,
+      "description": "High-quality latex primer designed for interior and exterior surfaces. This one-gallon container covers approximately 350-400 square feet with excellent adhesion properties. Blocks stains and provides uniform base coat for topcoat application. Water-based formula with low VOC content for safer indoor use.",
+      "quantity": 60
     },
-    { 
-        "id": 16, 
-        "name": "Orbital Sander", 
-        "image": "https://via.placeholder.com/300x300?text=Sander", 
-        "price": 54.99, 
-        "description": "Smooth surfaces quickly with this power sander.", 
-        "quantity": 8 
+    {
+      "id": 16,
+      "name": "Interior Paint",
+      "image": "https://via.placeholder.com/300x300?text=Interior+Paint",
+      "price": 35.99,
+      "description": "Premium latex interior paint with excellent coverage and durability. This one-gallon container provides rich, even color with superior hide and washability. Low-odor formula dries quickly to a smooth, professional finish. Available in flat, satin, and semi-gloss sheens for various room applications.",
+      "quantity": 55
     },
-    { 
-        "id": 17, 
-        "name": "Box of Nails", 
-        "image": "https://via.placeholder.com/300x300?text=Nails", 
-        "price": 3.49, 
-        "description": "1lb box of general-purpose nails.", 
-        "quantity": 70 
+    {
+      "id": 17,
+      "name": "Caulk",
+      "image": "https://via.placeholder.com/300x300?text=Caulk",
+      "price": 3.99,
+      "description": "Flexible acrylic caulk perfect for sealing gaps around windows, doors, and trim. This paintable caulk adheres to most surfaces and remains flexible after curing. Easy to apply with standard caulk gun and tools off cleanly with soap and water. Excellent for both interior and exterior weatherproofing applications.",
+      "quantity": 180
     },
-    { 
-        "id": 18, 
-        "name": "Box of Screws", 
-        "image": "https://via.placeholder.com/300x300?text=Screws", 
-        "price": 4.49, 
-        "description": "100 count wood screws with flat head.", 
-        "quantity": 65 
+    {
+      "id": 18,
+      "name": "Weatherstripping",
+      "image": "https://via.placeholder.com/300x300?text=Weatherstripping",
+      "price": 8.25,
+      "description": "Self-adhesive foam weatherstripping for doors and windows energy efficiency. This 17-foot roll provides excellent seal against air leaks and drafts. Easy installation requires no tools or fasteners. Helps reduce heating and cooling costs while improving indoor comfort levels throughout the year.",
+      "quantity": 90
     },
-
-    
-    { 
-        "id": 19, 
-        "name": "Paint Brushes (3-Pack)", 
-        "image": "https://via.placeholder.com/300x300?text=Paint+Brushes", 
-        "price": 8.49, 
-        "description": "Various sizes for trim and walls.", 
-        "quantity": 40 
+    {
+      "id": 19,
+      "name": "Door Hinges",
+      "image": "https://via.placeholder.com/300x300?text=Door+Hinges",
+      "price": 12.49,
+      "description": "Heavy-duty steel door hinges with removable pins for easy door installation and removal. These 3.5-inch hinges support doors up to 180 pounds with smooth, quiet operation. Rust-resistant finish suitable for interior and covered exterior applications. Includes mounting screws for standard door frame installation.",
+      "quantity": 85
     },
-    { 
-        "id": 20, 
-        "name": "Paint Tray Kit", 
-        "image": "https://via.placeholder.com/300x300?text=Paint+Tray", 
-        "price": 9.99, 
-        "description": "Tray, roller, and cover included.", 
-        "quantity": 20 
+    {
+      "id": 20,
+      "name": "Door Handles",
+      "image": "https://via.placeholder.com/300x300?text=Door+Handles",
+      "price": 24.99,
+      "description": "Stylish lever-style door handles with modern brushed nickel finish. These privacy locks feature easy-to-use thumb turn mechanism for bedroom and bathroom applications. Fits standard door preparations and includes all necessary mounting hardware. Smooth operation and contemporary design complement most home décor styles.",
+      "quantity": 40
     },
-    { 
-        "id": 21, 
-        "name": "Painter's Tape", 
-        "image": "https://via.placeholder.com/300x300?text=Painter%27s+Tape", 
-        "price": 5.75, 
-        "description": "1-inch wide blue painter's tape.", 
-        "quantity": 60 
+    {
+      "id": 21,
+      "name": "Window Locks",
+      "image": "https://via.placeholder.com/300x300?text=Window+Locks",
+      "price": 7.99,
+      "description": "Adjustable window locks providing enhanced security for double-hung and sliding windows. These zinc-plated locks install easily with included screws and provide positive locking action. Suitable for wood, vinyl, and aluminum window frames. Helps prevent unauthorized entry while maintaining emergency egress capability.",
+      "quantity": 110
     },
-    { 
-        "id": 22, 
-        "name": "Interior Latex Paint (White)", 
-        "image": "https://via.placeholder.com/300x300?text=White+Paint", 
-        "price": 29.99, 
-        "description": "1 gallon of premium interior paint.", 
-        "quantity": 22 
+    {
+      "id": 22,
+      "name": "Light Fixtures",
+      "image": "https://via.placeholder.com/300x300?text=Light+Fixtures",
+      "price": 49.99,
+      "description": "Contemporary ceiling light fixture with brushed steel finish and frosted glass shade. This flush-mount fixture accommodates standard medium-base bulbs up to 60 watts. Easy installation with standard electrical box mounting. Provides excellent ambient lighting for bedrooms, hallways, and utility areas.",
+      "quantity": 25
     },
-    { 
-        "id": 23, 
-        "name": "Wood Stain (Oak)", 
-        "image": "https://via.placeholder.com/300x300?text=Oak+Stain", 
-        "price": 12.99, 
-        "description": "Oil-based stain for interior/exterior wood.", 
-        "quantity": 15 
+    {
+      "id": 23,
+      "name": "Electrical Outlets",
+      "image": "https://via.placeholder.com/300x300?text=Electrical+Outlets",
+      "price": 2.99,
+      "description": "GFCI electrical outlets providing ground fault protection for bathroom, kitchen, and outdoor applications. These tamper-resistant outlets meet current electrical codes and safety standards. Easy installation in standard electrical boxes with clear test and reset button indicators. Essential for wet location electrical safety.",
+      "quantity": 200
     },
-    { 
-        "id": 24, 
-        "name": "Wood Stain (Walnut)", 
-        "image": "https://via.placeholder.com/300x300?text=Walnut+Stain", 
-        "price": 12.99, 
-        "description": "Rich walnut stain for wood furniture.", 
-        "quantity": 15 
+    {
+      "id": 24,
+      "name": "Light Switches",
+      "image": "https://via.placeholder.com/300x300?text=Light+Switches",
+      "price": 1.99,
+      "description": "Standard single-pole light switches with quiet toggle action and durable construction. These 15-amp switches fit standard electrical boxes and work with most residential lighting circuits. White finish matches most wall plate styles and home décor. UL listed for safety and reliability in daily use.",
+      "quantity": 250
     },
-    { 
-        "id": 25, 
-        "name": "Drop Cloth", 
-        "image": "https://via.placeholder.com/300x300?text=Drop+Cloth", 
-        "price": 10.99, 
-        "description": "6x9 ft reusable canvas drop cloth.", 
-        "quantity": 30 
+    {
+      "id": 25,
+      "name": "Ceiling Fans",
+      "image": "https://via.placeholder.com/300x300?text=Ceiling+Fans",
+      "price": 89.99,
+      "description": "Energy-efficient ceiling fan with reversible motor and remote control operation. This 52-inch fan features five wood-grain blades and integrated LED lighting. Quiet operation with multiple speed settings for year-round comfort. Easy installation with detailed instructions and all necessary mounting hardware included.",
+      "quantity": 15
     },
-
-    
-    { 
-        "id": 26, 
-        "name": "Trowel", 
-        "image": "https://via.placeholder.com/300x300?text=Trowel", 
-        "price": 7.49, 
-        "description": "Hand trowel with comfortable grip.", 
-        "quantity": 45 
+    {
+      "id": 26,
+      "name": "Smoke Detectors",
+      "image": "https://via.placeholder.com/300x300?text=Smoke+Detectors",
+      "price": 12.99,
+      "description": "Battery-powered smoke detector with photoelectric sensor technology for reliable fire detection. Features low-battery warning chirp and test button for regular maintenance checks. Easy installation with mounting bracket and screws included. Ten-year lithium battery provides long-term protection without frequent battery changes.",
+      "quantity": 80
     },
-    { 
-        "id": 27, 
-        "name": "Garden Pick", 
-        "image": "https://via.placeholder.com/300x300?text=Pick", 
-        "price": 16.99, 
-        "description": "Small pickaxe for digging tough soil.", 
-        "quantity": 18 
+    {
+      "id": 27,
+      "name": "Garden Hose",
+      "image": "https://via.placeholder.com/300x300?text=Garden+Hose",
+      "price": 24.99,
+      "description": "Heavy-duty rubber garden hose designed for year-round outdoor use. This 50-foot hose features brass fittings and burst-resistant construction rated for high water pressure. Flexible in cold weather and kink-resistant design for easy handling. Perfect for lawn watering, car washing, and general outdoor cleaning tasks.",
+      "quantity": 45
     },
-    { 
-        "id": 28, 
-        "name": "Garden Shears", 
-        "image": "https://via.placeholder.com/300x300?text=Shears", 
-        "price": 14.99, 
-        "description": "Sharp shears for pruning and trimming.", 
-        "quantity": 30 
+    {
+      "id": 28,
+      "name": "Sprinkler System",
+      "image": "https://via.placeholder.com/300x300?text=Sprinkler+System",
+      "price": 79.99,
+      "description": "Complete sprinkler system kit for automatic lawn and garden irrigation. Includes programmable timer, spray heads, and distribution tubing for up to 1000 square feet coverage. Water-efficient design reduces waste while maintaining healthy lawn and plants. Easy DIY installation with detailed setup instructions.",
+      "quantity": 20
     },
-    { 
-        "id": 29, 
-        "name": "Mulch Bag", 
-        "image": "https://via.placeholder.com/300x300?text=Mulch", 
-        "price": 4.99, 
-        "description": "2 cubic feet of bark mulch.", 
-        "quantity": 50 
+    {
+      "id": 29,
+      "name": "Fertilizer",
+      "image": "https://via.placeholder.com/300x300?text=Fertilizer",
+      "price": 18.99,
+      "description": "Balanced lawn fertilizer promoting healthy grass growth and rich green color. This 40-pound bag covers up to 15,000 square feet with slow-release formula feeding for up to 12 weeks. Contains essential nutrients including nitrogen, phosphorus, and potassium. Safe for children and pets when applied according to directions.",
+      "quantity": 65
     },
-    { 
-        "id": 30, 
-        "name": "Wood Trellis", 
-        "image": "https://via.placeholder.com/300x300?text=Trellis", 
-        "price": 19.99, 
-        "description": "Support climbing plants in your garden.", 
-        "quantity": 12 
+    {
+      "id": 30,
+      "name": "Mulch",
+      "image": "https://via.placeholder.com/300x300?text=Mulch",
+      "price": 3.99,
+      "description": "Natural hardwood mulch for landscaping and garden bed applications. This 2-cubic-foot bag provides excellent moisture retention and weed suppression around plants and trees. Naturally decomposes to enrich soil with organic matter. Rich brown color enhances curb appeal and complements most landscaping designs.",
+      "quantity": 100
     },
-    { 
-        "id": 31, 
-        "name": "Wildflower Seed Mix", 
-        "image": "https://via.placeholder.com/300x300?text=Wildflowers", 
-        "price": 3.99, 
-        "description": "Colorful mix of wildflowers for garden beds.", 
-        "quantity": 75 
+    {
+      "id": 31,
+      "name": "Grass Seed",
+      "image": "https://via.placeholder.com/300x300?text=Grass+Seed",
+      "price": 45.99,
+      "description": "Premium grass seed blend for establishing thick, durable lawns in sun and partial shade conditions. This 20-pound bag covers up to 8,000 square feet with drought-resistant varieties. Quick germination in 7-14 days with proper watering and soil preparation. Perfect for new lawns, overseeding, and bare spot repair.",
+      "quantity": 35
     },
-    { 
-        "id": 32, 
-        "name": "Carrot Seeds", 
-        "image": "https://via.placeholder.com/300x300?text=Carrots", 
-        "price": 1.99, 
-        "description": "Organic carrots for spring planting.", 
-        "quantity": 120 
+    {
+      "id": 32,
+      "name": "Hand Tools",
+      "image": "https://via.placeholder.com/300x300?text=Hand+Tools",
+      "price": 29.99,
+      "description": "Complete hand tool set including hammer, screwdrivers, pliers, and measuring tape in convenient carrying case. These professional-grade tools feature comfortable grips and durable construction for years of reliable use. Perfect starter set for homeowners and apartment dwellers. Essential tools for basic repairs and maintenance projects.",
+      "quantity": 50
     },
-    { 
-        "id": 33, 
-        "name": "Potato Seeds", "image": "https://via.placeholder.com/300x300?text=Potatoes", 
-        "price": 2.99, 
-        "description": "Seed potatoes for backyard gardens.", 
-        "quantity": 80 
+    {
+      "id": 33,
+      "name": "Power Drill",
+      "image": "https://via.placeholder.com/300x300?text=Power+Drill",
+      "price": 79.99,
+      "description": "Cordless power drill with variable speed trigger and keyless chuck for versatile drilling and driving applications. Includes rechargeable battery, charger, and basic drill bit set. Compact design with LED work light for improved visibility in dark spaces. Perfect for furniture assembly, picture hanging, and general home repairs.",
+      "quantity": 30
     },
-    { 
-        "id": 34, 
-        "name": "Tomato Seeds", 
-        "image": "https://via.placeholder.com/300x300?text=Tomatoes", 
-        "price": 2.49, 
-        "description": "Heirloom tomatoes for home gardening.", 
-        "quantity": 100 
+    {
+      "id": 34,
+      "name": "Tomato Seeds",
+      "image": "https://via.placeholder.com/300x300?text=Tomatoes",
+      "price": 2.49,
+      "description": "Premium heirloom tomato seeds perfect for home gardening enthusiasts. These non-GMO seeds produce flavorful, juicy tomatoes with exceptional taste and texture. Suitable for both container gardening and traditional garden beds. High germination rate with detailed planting instructions included. Harvest fresh, organic tomatoes all season long.",
+      "quantity": 100
     },
-    { 
-        "id": 35, 
-        "name": "Onion Seeds", 
-        "image": "https://via.placeholder.com/300x300?text=Onions", 
-        "price": 2.29, 
-        "description": "Sweet onion seeds, easy to grow.", 
-        "quantity": 90 
+    {
+      "id": 35,
+      "name": "Onion Seeds",
+      "image": "https://via.placeholder.com/300x300?text=Onions",
+      "price": 2.29,
+      "description": "Sweet onion seeds that are incredibly easy to grow in any garden setting. These varieties produce large, mild-flavored bulbs perfect for cooking and fresh eating. Long storage life when properly cured. Resistant to common onion diseases and adaptable to various soil conditions. Great for companion planting with tomatoes and peppers.",
+      "quantity": 90
     },
-    { 
-        "id": 36, 
-        "name": "Mustard Greens Seeds", 
-        "image": "https://via.placeholder.com/300x300?text=Mustard+Greens", 
-        "price": 1.79, 
-        "description": "Zesty leafy greens for salads and stir-fry.", 
-        "quantity": 95 
+    {
+      "id": 36,
+      "name": "Mustard Greens Seeds",
+      "image": "https://via.placeholder.com/300x300?text=Mustard+Greens",
+      "price": 1.79,
+      "description": "Zesty mustard greens seeds perfect for adding spicy flavor to salads and stir-fry dishes. These fast-growing leafy greens are packed with vitamins and nutrients. Can be harvested as baby greens or full-size leaves. Cold-hardy variety that extends your growing season. Excellent source of vitamins A, C, and K.",
+      "quantity": 95
     }
   ],
   "cart": []
