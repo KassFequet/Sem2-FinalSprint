@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Slide from "../components/home/Slides";
 import slideData from "../data/SlideData";
 import Contact from "../components/home/Contact";
+import Reviews from "../components/home/Reviews"
 import Wedding from "../components/WeddingBanner";
 import "../Home.css";
 import mompopgradient from "../images/Home/mompopgradient.png";
@@ -51,6 +52,7 @@ function Home() {
       </section>
 
       <Contact />
+      <Reviews />
       <Wedding />
     </div>
   );
