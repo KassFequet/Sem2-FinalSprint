@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -78,6 +78,32 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.weddingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  height: 10rem;
+  margin: 2rem;
+}
+
+.weddingText {
+  color: black;
+  font-size: 0.7rem;
+  font-family: "Roboto Serif";
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5rem;
 }
 
 @media (prefers-color-scheme: light) {
