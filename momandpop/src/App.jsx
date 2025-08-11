@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
+import Checkout from "./pages/Checkout";
 import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
 
@@ -23,9 +24,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalogue" element={<Catalogue />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/Cart" element={<Checkout />} />
         <Route path="/products/:productId" element={<ProductDetails />} />
       </Routes>
+      
     </>
   );
 }
