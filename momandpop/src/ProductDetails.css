@@ -43,13 +43,13 @@ html {
   top: 148px;
   left: 15px;
   font-size: 1rem;
-  color: var(--teal);
+  color: var(--black);
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
 }
 .back-link:hover {
-  color: var(--black);
+  color: var(--gray);
 }
 
 .product-details {
@@ -121,6 +121,25 @@ html {
   margin-bottom: 15px;
 }
 
+.toggle-description {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.toggle-description:hover {
+  color: #0056b3;
+}
+
+.description-section {
+  margin-bottom: 20px;
+}
+
 .option-pick {
   display: flex;
   flex-direction: column;
@@ -164,13 +183,38 @@ html {
 
 .add-to-cart {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px auto;
   background-color: var(--orange);
-  border: #864e3e solid 2px;
+  color: white;
+  border: 2px solid #943e00;
+  padding: 12px 24px;
+  font-size: 1.1rem;
   border-radius: 100px;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart button img {
+  width: 400px;
+  height: 24px;
+}
+
+.add-to-cart:hover {
+  border: 3px solid var(--brown);
+  transform: translateY(-2px);
+}
+
+.add-to-cart:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.add-to-cart.added {
+  background-color: var(--gray);
+  border: solid 2px rgba(73, 73, 73, 0.8);
+  cursor: pointer;
 }
 
 .stock {
@@ -188,6 +232,57 @@ html {
 
 .out-of-stock {
   color: #d32f2f;
+}
+
+.product-suggestions-section {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.product-suggestions-section h2 {
+  font-size: 1.8rem;
+  margin-left: 40px;
+  color: #333;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 40px;
+  padding-bottom: 10px;
+}
+
+.product-card {
+  width: 200px;
+  height: 283px;
+  font-size: 0.8rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.see-details {
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: rgba(20, 20, 20, 0.8);
+  background-color: var(--orange);
+  border: solid 2px rgba(73, 73, 73, 0.8);
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.see-details:hover {
+  background-color: var(--teal);
+  color: var(--white);
+  border: solid 2px rgba(73, 73, 73, 0.8);
 }
 
 .loading,

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import LengthButton from '../components/LengthButton';
+import AddToCartButton from '../components/AddToCartButton';
 import '../ProductDetails.css';
+import SuggestedProducts from '../components/SuggestedProducts';
 
 export default function ProductDetails() {
   const { productId } = useParams();
@@ -9,8 +11,9 @@ export default function ProductDetails() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentPrice, setCurrentPrice] = useState(0);
+  const [showFullDescription, setShowFullDescription] = useState(false);
 
-  // Generate consistent random number based on productId
+  // Generate consistent random number based on productId for item number
   const generateItemNumber = (id) => {
     const seed = parseInt(id) * 12345;
     return 10000 + (seed % 90000);
@@ -43,14 +46,25 @@ export default function ProductDetails() {
     }
   }, [productId]);
 
+  // Function to truncate description
+  const truncateDescription = (text, maxLength = 100) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + '...';
+  };
+
   if (loading) return <div className="loading">Loading...</div>;
   if (error) return <div className="error">Error: {error}</div>;
   if (!product) return <div className="error">Product not found</div>;
 
   return (
     <>
-      <div className="back-link">
-        <a href="/catalogue">← Go Back</a>
+      <div>
+        <a
+          className="back-link"
+          href="/catalogue"
+        >
+          ← Go Back
+        </a>
       </div>
       <div className="product-details">
         <div className="product-image">
@@ -69,7 +83,26 @@ export default function ProductDetails() {
             ${currentPrice.toFixed(2)}
             <span className="tax">Tax</span>
           </p>
-          <p className="description">{product.description}</p>
+
+          <div className="description-section">
+            <p className="description">
+              {product.name.toLowerCase().includes('timber') &&
+              product.description.length > 100
+                ? showFullDescription
+                  ? product.description
+                  : truncateDescription(product.description)
+                : product.description}
+            </p>
+            {product.name.toLowerCase().includes('timber') &&
+              product.description.length > 100 && (
+                <button
+                  className="toggle-description"
+                  onClick={() => setShowFullDescription(!showFullDescription)}
+                >
+                  {showFullDescription ? 'Show Less' : 'More Details'}
+                </button>
+              )}
+          </div>
 
           {product.name.toLowerCase().includes('timber') && (
             <LengthButton
@@ -78,7 +111,11 @@ export default function ProductDetails() {
             />
           )}
 
-          <button className="add-to-cart">Add to Cart</button>
+          <AddToCartButton
+            product={product}
+            currentPrice={currentPrice}
+            quantity={1}
+          />
           <p
             className={`stock ${
               product.quantity > 0 ? 'in-stock' : 'out-of-stock'
@@ -89,6 +126,14 @@ export default function ProductDetails() {
               : 'Out of Stock'}
           </p>
         </div>
+      </div>
+
+      <div className="product-suggestions-section">
+        <h2>People Who Bought this Item also Bought</h2>
+        <SuggestedProducts
+          currentProductId={product.id}
+          currentProductCategory={product.category}
+        />
       </div>
     </>
   );
