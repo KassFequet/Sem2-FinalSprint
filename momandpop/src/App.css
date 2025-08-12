@@ -118,3 +118,18 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 1600px) {
+  .weddingContainer {
+    height: 8rem;
+  }
+
+  .weddingText {
+  font-size: 0.6rem;
+}
+
+.weddingContainer svg {
+  height: 35px;
+}
+
+}

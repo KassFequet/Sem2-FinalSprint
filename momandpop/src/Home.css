@@ -125,16 +125,21 @@
 /* Contact Section*/
 
 .contactContainer {
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   justify-content: space-evenly;
 }
 
 iframe {
   border: 2px solid var(--black);
   border-radius: 16px;
+}
+
+.contactInfoContainer {
+  margin-right: 5rem;
 }
 
 .contactInfoContainer h3 {
@@ -193,16 +198,15 @@ iframe {
   background-attachment: fixed;
 }
 
-
 .itemBox {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(245, 245, 245, .6);
+  background-color: rgb(245, 245, 245, 0.6);
   width: 45rem;
   height: 22rem;
   padding: 1rem 2rem;
-  margin:  1rem;
+  margin: 1rem;
   text-align: right;
   border-radius: 16px;
 }
@@ -227,17 +231,101 @@ iframe {
   font-weight: 500;
 }
 
+/*Laptop Media Queries */
 @media (max-width: 1600px) {
+  .slide {
+    height: 40rem;
+  }
+
+  .slideContent {
+    margin-top: 6rem;
+  }
+
   .momPopDesc {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .momPopDesc h3 {
     font-size: 1.5rem;
+    margin: 0% 10% 0% 10%;
+  }
+
+  .desc1 {
+    width: 49%;
+    margin: 1% 10% 2% 10%;
+  }
+
+  .desc2 {
+    width: 35%;
+    margin: 1% 10% 5% 10%;
+  }
+
+  .scrollBar {
+    height: 24rem;
+  }
+
+  .itemBox {
+    width: 40rem;
+    height: 20rem;
+  }
+
+  .itemBox img {
+    padding-left: 1rem;
+  }
+
+  .itemBox p {
+    font-size: 1.3rem;
+  }
+
+  .itemBox span {
+    font-size: 1.3rem;
+  }
+
+  .contactInfoContainer {
+    margin-right: 4rem;
   }
 }
 
-@media (max-width: 480px) {
-  .itemBox p,
+/*Large Tablet Media Queries*/
+@media (max-width: 1200px) {
+  .slideContent {
+    margin-top: 6rem;
+  }
+
+  .momPopDesc {
+    font-size: 1.1rem;
+  }
+
+  .momPopDesc h3 {
+    margin: -8rem 0 0 1rem;
+  }
+
+  .desc1 {
+    width: 49%;
+    margin: 0 0 1rem 1rem;
+  }
+
+  .desc2 {
+    width: 35%;
+    margin: 0 0 0 1rem;
+  }
+
+  .scrollBar {
+    height: 19rem;
+  }
+
+  .itemBox {
+    width: 35rem;
+    height: 15rem;
+  }
+
+  .itemBox img {
+    padding-left: 1rem;
+  }
+
+  .itemBox p {
+    font-size: 1rem;
+  }
+
   .itemBox span {
     font-size: 1rem;
   }
