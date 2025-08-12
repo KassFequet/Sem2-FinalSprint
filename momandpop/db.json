@@ -348,10 +348,10 @@
     },
     {
       "id": "39",
-      "name": "Potato Seeds",
-      "image": "/src/images/Products/potatoseeds.jpg",
-      "price": 3.0,
-      "description": "Certified seed potatoes ideal for home gardeners and small-scale farmers. Produces high yields of disease-free, firm potatoes perfect for roasting, mashing, and baking. Easy to plant with clear instructions included. Suitable for various soil types and climates.",
+      "name": "Beet Seeds",
+      "image": "/src/images/Products/beetSeeds.jpg",
+      "price": 2.40,
+      "description": "High-quality beet seeds producing tender, sweet roots with vibrant red color. Easy to grow in garden beds or containers, these beets are perfect for roasting, salads, and juicing. Includes detailed planting and care instructions for a successful and abundant harvest.",
       "quantity": 75,
       "category": "seeds"
     },
