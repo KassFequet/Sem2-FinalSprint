@@ -63,7 +63,7 @@ export default function ProductDetails() {
           className="back-link"
           href="/catalogue"
         >
-          ← Go Back
+          ← Back to Catalogue
         </a>
       </div>
       <div className="product-details">
