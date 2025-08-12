@@ -46,8 +46,8 @@ html {
   color: var(--black);
   text-decoration: none;
   padding: 10px 15px;
-  border-radius: 5px;
 }
+
 .back-link:hover {
   color: var(--gray);
 }
@@ -245,6 +245,12 @@ html {
   color: #333;
 }
 
+.product-suggestions-section h3 {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
 .product-list {
   display: flex;
   flex-direction: row;
@@ -257,7 +263,7 @@ html {
 
 .product-card {
   width: 200px;
-  height: 283px;
+  height: auto;
   font-size: 0.8rem;
   background-color: var(--white);
   border-radius: 10px;
@@ -267,11 +273,25 @@ html {
   padding: 20px;
 }
 
+.product-card .price {
+  font-size: 1rem;
+  color: #06c00c;
+  margin-top: 10px;
+}
+
+.product-card .tax {
+  font-size: 0.6rem;
+  color: #888;
+  margin-top: -15px;
+}
+
 .see-details {
-  margin-bottom: 5px;
-  padding: 8px 12px;
+  height: 30px;
+  width: 140px;
+  margin-bottom: 10px;
+  padding: 3px 12px;
   font-size: 0.9rem;
-  color: rgba(20, 20, 20, 0.8);
+  color: var(--white);
   background-color: var(--orange);
   border: solid 2px rgba(73, 73, 73, 0.8);
   border-radius: 100px;

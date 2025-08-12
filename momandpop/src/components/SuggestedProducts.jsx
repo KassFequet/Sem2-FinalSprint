@@ -49,6 +49,10 @@ const SuggestedProducts = ({ currentProductId, currentProductCategory }) => {
                 style={{ width: '150px', height: '150px', objectFit: 'cover' }}
               />
               <h3>{product.name}</h3>
+              <p className="price">
+                ${product.price.toFixed(2)}
+                <span className="tax">Tax</span>
+              </p>
               <Link to={`/products/${product.id}`}>
                 <button className="see-details">See Details</button>
               </Link>
