@@ -39,7 +39,7 @@
     {
       "id": "5",
       "name": "Sheathing Plywood",
-      "image": "/src/images/Products/sheathingplywood.jpg",
+      "image": "/src/images/Products/sheathingPlywood.jpg",
       "price": 28.99,
       "description": "High-quality 4x8 foot sheathing plywood, engineered for roofing and wall applications. This structural grade plywood provides excellent strength and weather resistance when used as subflooring, roof decking, or wall sheathing. Made with moisture-resistant adhesives and featuring smooth surface for easy installation.",
       "quantity": 40,
@@ -48,7 +48,7 @@
     {
       "id": "6",
       "name": "Hardwood Boards",
-      "image": "/src/images/Products/hardwoodboards.jpg",
+      "image": "/src/images/Products/hardwoodBoards.jpeg",
       "price": 55.0,
       "description": "Premium hardwood boards measuring 1 inch thick, ideal for furniture making and finish carpentry. Smooth, durable surface perfect for staining or painting. Offers excellent strength and long-lasting performance in interior applications.",
       "quantity": 25,
@@ -57,7 +57,7 @@
     {
       "id": "7",
       "name": "MDF Boards",
-      "image": "/src/images/Products/mdfboards.jpg",
+      "image": "/src/images/Products/mdfBoards.jpeg",
       "price": 40.0,
       "description": "Smooth medium-density fiberboard (MDF) sheets, 3/4 inch thick, perfect for cabinetry, shelving, and decorative projects. Provides an even surface for painting and easy machining with standard woodworking tools.",
       "quantity": 30,
@@ -66,7 +66,7 @@
     {
       "id": "8",
       "name": "Hardwood Plywood",
-      "image": "/src/images/Products/hardwoodplywood.jpg",
+      "image": "/src/images/Products/hardwoodPlywood.jpg",
       "price": 45.99,
       "description": "4x8 foot hardwood plywood sheet with smooth finish, suitable for cabinetry and fine woodworking. Made from premium hardwood veneers for superior strength and appearance. Ideal for furniture, paneling, and decorative applications.",
       "quantity": 35,
@@ -76,7 +76,7 @@
     {
       "id": "9",
       "name": "Chisel Variety Pack",
-      "image": "/src/images/Products/chiselpack.jpg",
+      "image": "/src/images/Products/chisels.jpg",
       "price": 24.99,
       "description": "Assorted chisel set perfect for fine woodworking and carving projects. Includes multiple sizes with durable, comfortable handles for precise control and lasting use.",
       "quantity": 40,
@@ -85,7 +85,7 @@
     {
       "id": "10",
       "name": "Hand Saw",
-      "image": "/src/images/Products/handsaw.jpg",
+      "image": "/src/images/Products/handSaw.jpg",
       "price": 18.99,
       "description": "Compact hand saw designed for quick, clean cuts in wood and light materials. Lightweight and comfortable grip ideal for both beginners and professionals.",
       "quantity": 50,
@@ -94,7 +94,7 @@
     {
       "id": "11",
       "name": "Wood Glue",
-      "image": "/src/images/Products/woodglue.jpg",
+      "image": "/src/images/Products/woodGlue.jpg",
       "price": 7.5,
       "description": "High-strength wood glue for bonding various wood types. Dries clear with minimal clamp time. Ideal for furniture repairs, joinery, and woodworking projects requiring durable adhesion.",
       "quantity": 80,
@@ -103,7 +103,7 @@
     {
       "id": "12",
       "name": "Tape Measure",
-      "image": "/src/images/Products/tapemeasure.jpg",
+      "image": "/src/images/Products/tapeMeasure.jpg",
       "price": 12.99,
       "description": "25-foot retractable tape measure with durable casing and clear, easy-to-read markings. Magnetic hook end helps secure to metal surfaces for one-person measurements.",
       "quantity": 60,
@@ -158,7 +158,7 @@
     {
       "id": "18",
       "name": "Paint Tray",
-      "image": "/src/images/Products/painttray.jpg",
+      "image": "/src/images/Products/paintTray.jpg",
       "price": 8.99,
       "description": "Sturdy plastic paint tray designed to hold standard one-gallon paint cans. Features textured rolling surface for even paint distribution and easy cleanup.",
       "quantity": 70,
@@ -167,7 +167,7 @@
     {
       "id": "19",
       "name": "Painters Tape",
-      "image": "/src/images/Products/painterstape.jpg",
+      "image": "/src/images/Products/paintersTape.jpg",
       "price": 6.99,
       "description": "High-quality painter's tape for clean, sharp paint lines. Adheres well to a variety of surfaces and removes cleanly without residue. Ideal for indoor and outdoor painting projects.",
       "quantity": 80,
@@ -176,7 +176,7 @@
     {
       "id": "20",
       "name": "Drop Cloth",
-      "image": "/src/images/Products/dropcloth.jpg",
+      "image": "/src/images/Products/dropCloth.jpg",
       "price": 12.99,
       "description": "Protective plastic drop cloth for covering floors, furniture, and surfaces during painting projects. Lightweight and tear-resistant, providing excellent coverage to prevent paint spills and splatters.",
       "quantity": 70,
@@ -185,7 +185,7 @@
     {
       "id": "21",
       "name": "Interior Paint",
-      "image": "/src/images/Products/interiorpaint.jpg",
+      "image": "/src/images/Products/interiorPaint.jpg",
       "price": 35.99,
       "description": "Premium latex interior paint with excellent coverage and durability. This one-gallon container provides rich, even color with superior hide and washability. Low-odor formula dries quickly to a smooth, professional finish. Available in flat, satin, and semi-gloss sheens for various room applications.",
       "quantity": 55,
@@ -194,7 +194,7 @@
     {
       "id": "22",
       "name": "Exterior Stain",
-      "image": "/src/images/Products/exteriorstain.jpg",
+      "image": "/src/images/Products/exteriorStain.jpg",
       "price": 29.99,
       "description": "High-quality exterior wood stain designed to protect and enhance the natural beauty of wood surfaces. This one-gallon container provides excellent UV protection and water resistance. Perfect for decks, fences, and outdoor furniture. Available in a variety of colors to suit your project.",
       "quantity": 40,
@@ -212,7 +212,7 @@
     {
       "id": "24",
       "name": "Paint Roller",
-      "image": "/src/images/Products/paintroller.jpg",
+      "image": "/src/images/Products/paintRoller.jpg",
       "price": 9.99,
       "description": "High-quality paint roller designed for smooth application of interior and exterior paints. Features a durable roller cover for even coverage and a comfortable handle for easy use. Suitable for walls, ceilings, and large surfaces.",
       "quantity": 50,
@@ -267,7 +267,7 @@
     {
       "id": "30",
       "name": "Garden Hose",
-      "image": "/src/images/Products/gardenhose.jpg",
+      "image": "/src/images/Products/gardenHose.jpg",
       "price": 24.99,
       "description": "Heavy-duty rubber garden hose designed for year-round outdoor use. This 50-foot hose features brass fittings and burst-resistant construction rated for high water pressure. Flexible in cold weather and kink-resistant design for easy handling. Perfect for lawn watering, car washing, and general outdoor cleaning tasks.",
       "quantity": 45,
@@ -285,7 +285,7 @@
     {
       "id": "32",
       "name": "Watering Can",
-      "image": "/src/images/Products/wateringcan.jpg",
+      "image": "/src/images/Products/wateringCan.jpg",
       "price": 14.99,
       "description": "Lightweight watering can with a removable rose for gentle watering of flowers, seedlings, and houseplants. Durable plastic design suitable for indoor and outdoor use.",
       "quantity": 40,
@@ -295,7 +295,7 @@
     {
       "id": "33",
       "name": "Tomato Seeds",
-      "image": "/src/images/Products/tomatoseeds.jpg",
+      "image": "/src/images/Products/tomatoSeeds.jpg",
       "price": 2.49,
       "description": "Premium heirloom tomato seeds perfect for home gardening enthusiasts. These non-GMO seeds produce flavorful, juicy tomatoes with exceptional taste and texture. Suitable for both container gardening and traditional garden beds. High germination rate with detailed planting instructions included. Harvest fresh, organic tomatoes all season long.",
       "quantity": 100,
@@ -304,7 +304,7 @@
     {
       "id": "34",
       "name": "Onion Seeds",
-      "image": "/src/images/Products/onionseeds.jpg",
+      "image": "/src/images/Products/onionSeeds.jpg",
       "price": 2.29,
       "description": "Sweet onion seeds that are incredibly easy to grow in any garden setting. These varieties produce large, mild-flavored bulbs perfect for cooking and fresh eating. Long storage life when properly cured. Resistant to common onion diseases and adaptable to various soil conditions. Great for companion planting with tomatoes and peppers.",
       "quantity": 90,
@@ -312,35 +312,35 @@
     },
     {
       "id": "35",
-      "name": "Mustard Greens Seeds",
-      "image": "/src/images/Products/mustardgreens.jpg",
-      "price": 1.79,
-      "description": "Zesty mustard greens seeds perfect for adding spicy flavor to salads and stir-fry dishes. These fast-growing leafy greens are packed with vitamins and nutrients. Can be harvested as baby greens or full-size leaves. Cold-hardy variety that extends your growing season. Excellent source of vitamins A, C, and K.",
+      "name": "Basil Seeds",
+      "image": "/src/images/Products/basilSeeds.jpg",
+      "price": 1.99,
+      "description": "Fast-growing basil seeds yielding fragrant, flavorful leaves ideal for cooking and garnishing. Suitable for indoor pots or garden beds. Prefers warm weather and regular harvesting encourages bushier growth. Includes planting instructions to ensure a bountiful supply.",
       "quantity": 95,
       "category": "seeds"
     },
     {
       "id": "36",
-      "name": "Wildflower Seeds",
-      "image": "/src/images/Products/wildflowers.jpg",
-      "price": 4.0,
-      "description": "Mix of native wildflower seeds designed to attract pollinators and enhance garden biodiversity. Easy to grow in sunny locations and adaptable to various soil conditions. Produces colorful blooms throughout the growing season.",
+      "name": "Squash Seeds",
+      "image": "/src/images/Products/squashSeeds.jpg",
+      "price": 3.25,
+      "description": "Heirloom butternut squash seeds that produce large, sweet, and nutty-flavored squash. Vining plants thrive in warm seasons with high yields. Perfect for roasting, soups, and storage. Includes detailed planting and care tips for a successful harvest.",
       "quantity": 90,
       "category": "seeds"
     },
     {
       "id": "37",
-      "name": "Pumpkin Seeds",
-      "image": "/src/images/Products/pumpkinseeds.jpg",
-      "price": 3.5,
-      "description": "Heirloom pumpkin seeds ideal for growing large, flavorful pumpkins. These seeds produce vigorous vines and heavy yields. Perfect for pies, carving, and fall decorations. Includes planting instructions for best results.",
+      "name": "Pepper Seeds",
+      "image": "/src/images/Products/pepperSeeds.jpg",
+      "price": 2.79,
+      "description": "Easy-to-grow banana pepper seeds producing mild, sweet peppers perfect for fresh eating, pickling, and cooking. Plants yield abundant harvests with crisp texture and vibrant yellow color. Ideal for garden beds or containers. Includes planting instructions for best results.",
       "quantity": 80,
       "category": "seeds"
     },
     {
       "id": "38",
       "name": "Grass Seeds",
-      "image": "/src/images/Products/grassseeds.jpg",
+      "image": "/src/images/Products/grassSeeds.jpg",
       "price": 6.0,
       "description": "Premium lawn grass seed blend designed for thick, green, and durable turf. Suitable for various climates and soil types. Provides fast germination and long-lasting, drought-resistant growth. Perfect for new lawns or overseeding existing grass.",
       "quantity": 70,
@@ -358,7 +358,7 @@
     {
       "id": "40",
       "name": "Carrot Seeds",
-      "image": "/src/images/Products/carrotseeds.jpg",
+      "image": "/src/images/Products/carrotSeeds.jpg",
       "price": 2.89,
       "description": "Sweet and crunchy carrot seeds that are easy to grow in garden beds or containers. Produces bright orange, tender roots with excellent flavor. Resistant to common pests and diseases. Ideal for fresh eating, cooking, and juicing. Includes planting and care instructions for best results.",
       "quantity": 80,

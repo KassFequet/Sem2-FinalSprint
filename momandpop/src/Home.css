@@ -79,6 +79,7 @@
   font-family: inherit;
   font-size: 1.3rem;
   transition: background-color 0.25s;
+  color: var(--white);
 }
 
 .slideContent button:hover {
@@ -224,4 +225,20 @@ iframe {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 500;
+}
+
+@media (max-width: 1600px) {
+  .momPopDesc {
+    font-size: 1.2rem;
+  }
+  .momPopDesc h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .itemBox p,
+  .itemBox span {
+    font-size: 1rem;
+  }
 }
