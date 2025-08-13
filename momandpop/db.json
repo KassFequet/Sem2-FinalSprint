@@ -49,7 +49,7 @@
       "id": "6",
       "name": "Hardwood Boards",
       "image": "/src/images/Products/hardwoodBoards.jpeg",
-      "price": 55.0,
+      "price": 55,
       "description": "Premium hardwood boards measuring 1 inch thick, ideal for furniture making and finish carpentry. Smooth, durable surface perfect for staining or painting. Offers excellent strength and long-lasting performance in interior applications.",
       "quantity": 25,
       "category": "timber"
@@ -58,7 +58,7 @@
       "id": "7",
       "name": "MDF Boards",
       "image": "/src/images/Products/mdfBoards.jpeg",
-      "price": 40.0,
+      "price": 40,
       "description": "Smooth medium-density fiberboard (MDF) sheets, 3/4 inch thick, perfect for cabinetry, shelving, and decorative projects. Provides an even surface for painting and easy machining with standard woodworking tools.",
       "quantity": 30,
       "category": "timber"
@@ -72,7 +72,6 @@
       "quantity": 35,
       "category": "timber"
     },
-
     {
       "id": "9",
       "name": "Chisel Variety Pack",
@@ -218,7 +217,6 @@
       "quantity": 50,
       "category": "paint and stain"
     },
-
     {
       "id": "25",
       "name": "Trowel",
@@ -291,7 +289,6 @@
       "quantity": 40,
       "category": "garden tools"
     },
-
     {
       "id": "33",
       "name": "Tomato Seeds",
@@ -341,7 +338,7 @@
       "id": "38",
       "name": "Grass Seeds",
       "image": "/src/images/Products/grassSeeds.jpg",
-      "price": 6.0,
+      "price": 6,
       "description": "Premium lawn grass seed blend designed for thick, green, and durable turf. Suitable for various climates and soil types. Provides fast germination and long-lasting, drought-resistant growth. Perfect for new lawns or overseeding existing grass.",
       "quantity": 70,
       "category": "seeds"
@@ -350,7 +347,7 @@
       "id": "39",
       "name": "Beet Seeds",
       "image": "/src/images/Products/beetSeeds.jpg",
-      "price": 2.40,
+      "price": 2.4,
       "description": "High-quality beet seeds producing tender, sweet roots with vibrant red color. Easy to grow in garden beds or containers, these beets are perfect for roasting, salads, and juicing. Includes detailed planting and care instructions for a successful and abundant harvest.",
       "quantity": 75,
       "category": "seeds"
