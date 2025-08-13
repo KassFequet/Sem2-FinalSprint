@@ -9,8 +9,14 @@ export default function Catalogue() {
   return (
     <div className="cataloguepage">
       {sections.map((section, index) => (
-        <div key={index} style={{ marginBottom: "1rem" }}>
-          {/* Category section with background */}
+        <div
+          key={index}
+          className="category-wrapper"
+          style={{ marginBottom: "1rem" }}
+          onMouseEnter={() => setHoveredCategoryIndex(index)}
+          onMouseLeave={() => setHoveredCategoryIndex(null)}
+        >
+          {/* Category section */}
           <div
             className="categorysection"
             style={{
@@ -24,13 +30,11 @@ export default function Catalogue() {
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
-            onMouseEnter={() => setHoveredCategoryIndex(index)}
-            onMouseLeave={() => setHoveredCategoryIndex(null)}
           >
             <h2>{section.title}</h2>
           </div>
 
-          {/* Dropdown rendered below this category if hovered */}
+          {/* Dropdown under category */}
           {hoveredCategoryIndex === index && (
             <div className="dropdowncontainer">
               <Dropdown category={section.category} />
