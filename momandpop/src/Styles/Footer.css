@@ -1,0 +1,143 @@
+* {
+    font-family: 'Roboto';font-size: 22px;
+}
+
+footer {
+    background-image: url(../images/Workshop.jpg);
+    margin-top: 50px;
+    height: 600px;
+    width: 100%;
+    bottom: 0;
+    background-position: center top;
+    background-size: cover;
+}
+
+.footer-container {
+    padding-top: 50px;
+    /* background-color: red; */
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-left {
+    /* background-color: green; */
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+}
+
+.footer-hero {
+    width: 340px;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    padding: 11px;
+    margin-bottom: 8px;
+
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+
+}
+
+.newsletter input[type="text"],
+input[type="email"] {
+    margin-bottom: 10px;
+    height: 50px;
+    width: 280px;
+    border: none;
+    box-shadow: 0 0 0 1px black;
+}
+
+.newsletter button {
+    width: 239px;
+    height: 44px;
+    background-color: #864E3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.footer-right {
+    /* background-color: blue; */
+    width: 25%;
+    height: auto;
+    display: flex;
+}
+
+.links-container {
+    display: flex;
+    /* background-color: green; */
+    width: 90%;
+    height: 400px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, auto); 
+    gap: 10px 15px; 
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-links a {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.61);
+    height: 59px;
+    width: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: ease-in-out 0.1s;
+}
+
+.footer-bottom {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    /* background-color: red; */
+    padding-left: 440px;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: .8rem;
+}
+
+.footer-bottom img {
+    margin-left: auto;
+    height: 112px;
+    width: 112px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 330px;
+}
+
+footer a:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+@media (max-width: 900px) {
+    /* Stack left and right sections vertically */
+    .footer-container {
+        flex-direction: column;
+        transform: none; /* remove big translation */
+    }
+    .footer {
+        height: 800px;
+    }
+
+
+}

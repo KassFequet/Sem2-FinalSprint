@@ -8,6 +8,10 @@ function Checkout() {
   const [phone, setPhone] = useState("");
   const navigate = useNavigate();
 
+    const generateItemNumber = (id) => {
+    const seed = parseInt(id) * 12345;
+    return 10000 + (seed % 90000);
+  };
   // Load cart on mount
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -50,7 +54,7 @@ function Checkout() {
     }
     alert("Order placed! Thank you.");
     handleClearCart();
-    // Not made yet \/
+    // Not mad yet 
     navigate("/order-confirmation");
   };
 
@@ -58,33 +62,67 @@ function Checkout() {
     <>
       <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet" />
       <div className="checkout-box">
-        <button id="back-button" onClick={() => navigate(-1)}>← Go Back</button>
+        <a
+          className="back-link"
+          href="/catalogue"
+        >
+          ← Back to Catalogue
+        </a>
         <div className="check-holder">
           {/* LEFT: CART ITEMS */}
           <div className="checkout-left">
             <div className="my-cart">My Cart: <p>{cart.length} Items</p></div>
             <button className="clear-cart" onClick={handleClearCart}>Clear Cart</button>
-
-            <div className="checkout-items">
+            <div className="items-holder">
+              <div className="checkout-items">
               {cart.length === 0 ? (
                 <p>The cart is empty</p>
               ) : (
                 cart.map(item => (
                   <div className="cart-item" key={item.id}>
-                    <img src={item.image} alt={item.name} width="60" />
-                    <p>{item.name}</p>
-                    <p>${item.price.toFixed(2)}</p>
-                    <input
-                      type="number"
-                      min="1"
-                      value={item.quantity}
-                      onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
-                    />
-                    <button onClick={() => handleRemoveItem(item.id)}>Remove</button>
+                    <div className="item-image">
+                      <img src={item.image} alt={item.name}  />
+                    </div>
+                    <div className="item-details">
+                      <div className="item-info-box">
+                        <div className="item-info">
+                          <h3>{item.name}</h3>
+                          <p className="item-num">Item # {generateItemNumber(item.id)}</p>
+                          <p className="item-desc">{item.description}</p>
+                        </div>
+                        <div className="item-quantity">
+                          <label htmlFor={`quantity-${item.id}`}>
+                            <span className="quantity">Qty</span>
+                          </label>
+                          <select
+                            id={`quantity-${item.id}`}
+                            name="quantity"
+                            value={item.quantity} // <-- show the actual cart quantity
+                            onChange={(e) => updateQuantity(item.id, Number(e.target.value))} // <-- update when changed
+                          >
+                            {[1, 2, 3, 4, 5].map(qty => (
+                              <option key={qty} value={qty}>
+                                {qty}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+
+
+                      </div>
+                      <div className="items-right">
+                        <div className="item-price">
+                          <p>${item.price.toFixed(2)}</p>
+                        </div>
+                        <button className="remove-item" onClick={() => handleRemoveItem(item.id)}><h3>Remove Item</h3></button>
+                      </div>
+                    </div>
                   </div>
                 ))
               )}
+              </div>
             </div>
+
           </div>
 
           {/* RIGHT: ORDER INFO */}

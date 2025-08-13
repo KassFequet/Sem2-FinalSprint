@@ -1,76 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ovalLogo from '../images/ovallogoborder.png';
 import homelogo from '../images/homelogo.png';
 import cataloguelogo from '../images/cataloguelogo.png';
 import cartlogo from '../images/cartlogo.png';
+import '../Styles/Header.css';
 
 const Header = () => {
+  const [showCatalogueBox, setShowCatalogueBox] = useState(false);
+
   return (
     <nav className="nav-bar">
       <div>
-        <img
-          src={ovalLogo}
-          alt="ovalLogo"
-          style={{ height: '100px', marginTop: '10px', marginLeft: '10px' }}
-        />
+        <img src={ovalLogo} alt="ovalLogo" className="oval-logo" />
       </div>
-      <div style={{ display: 'flex', gap: '2rem' }}>
-        <Link
-          to="/"
-          style={{
-            fontSize: '1.9rem',
-            textDecoration: 'none',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            color: 'black',
-            marginRight: '20px',
-          }}
-        >
-          <img
-            src={homelogo}
-            alt="Home"
-            style={{ height: '40px', marginBottom: '4px' }}
-          />
+      <div className="nav-links-container">
+        <Link to="/" className="nav-link">
+          <img src={homelogo} alt="Home" className="nav-icon" />
           Home
         </Link>
-        <Link
-          to="/catalogue"
-          style={{
-            fontSize: '1.9rem',
-            textDecoration: 'none',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            color: 'black',
-            marginRight: '20px',
-          }}
+
+        <div
+          className="catalogue-wrapper"
+          onMouseEnter={() => setShowCatalogueBox(true)}
+          onMouseLeave={() => setShowCatalogueBox(false)}
         >
-          <img
-            src={cataloguelogo}
-            alt="Catalogue"
-            style={{ height: '40px', marginBottom: '4px' }}
-          />
-          Catalogue
-        </Link>
-        <Link
-          to="/cart"
-          style={{
-            fontSize: '1.9rem',
-            textDecoration: 'none',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            color: 'black',
-            marginRight: '40px',
-          }}
-        >
-          <img
-            src={cartlogo}
-            alt="Cart"
-            style={{ height: '40px', marginBottom: '4px' }}
-          />
+          <Link to="/catalogue" className="nav-link">
+            <img src={cataloguelogo} alt="Catalogue" className="nav-icon" />
+            Catalogue
+          </Link>
+
+          <div className={`catalogue-dropdown ${showCatalogueBox ? 'open' : ''}`}>
+            <Link to="/catalogue#timber">Timber</Link>
+            <Link to="/catalogue#woodtools">Wood Working Tools</Link>
+            <Link to="/catalogue#paint">Paint & Stain</Link>
+            <Link to="/catalogue#garden">Garden Tools</Link>
+            <Link to="/catalogue#seeds">Seeds</Link>
+          </div>
+        </div>
+
+        <Link to="/cart" className="nav-link">
+          <img src={cartlogo} alt="Cart" className="nav-icon" />
           Cart
         </Link>
       </div>

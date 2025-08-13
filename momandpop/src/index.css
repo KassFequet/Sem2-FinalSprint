@@ -5,14 +5,14 @@
 
   color-scheme: light dark;
   color: #000000;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 
   --teal: #578088;
   --gray: #74948C;
   --beige: #CFB580;
   --brown: #864E3E;
   --orange: #CA7C4C;
-  --white: #f5f5f5;
+  --white: #ffffff;
   --black: #000000;
   --shadow: 0 1px 5px rgba(73, 73, 73, 0.8);
   --textShadow: 3px 3px 4px #000;
@@ -25,9 +25,12 @@
 }
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -48,21 +51,16 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
   }
   button {
     background-color: #f9f9f9;
