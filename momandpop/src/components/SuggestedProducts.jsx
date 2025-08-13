@@ -46,7 +46,12 @@ const SuggestedProducts = ({ currentProductId, currentProductCategory }) => {
               <img
                 src={product.image}
                 alt={product.name}
-                style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+                style={{
+                  width: '150px',
+                  height: '150px',
+                  objectFit: 'cover',
+                  borderRadius: '8px',
+                }}
               />
               <h3>{product.name}</h3>
               <p className="price">
