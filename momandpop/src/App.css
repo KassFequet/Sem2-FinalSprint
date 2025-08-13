@@ -133,3 +133,64 @@ button:focus-visible {
 }
 
 }
+
+@media (max-width: 1200px) {
+  .weddingContainer {
+    height: 6rem;
+  }
+
+  .weddingText {
+  font-size: 0.5rem;
+  gap: 3rem;
+}
+
+.weddingContainer svg {
+  height: 30px;
+}
+
+}
+
+@media (max-width: 900px) {
+  .weddingContainer {
+    height: 5rem;
+  }
+
+  .weddingText {
+  font-size: 0.4rem;
+  gap: 2rem;
+}
+
+.weddingContainer svg {
+  height: 25px;
+}
+}
+
+@media (max-width: 600px) {
+  .weddingContainer {
+    height: 4rem;
+  }
+
+  .weddingText {
+  font-size: 0.3rem;
+  gap: 1rem;
+}
+
+.weddingContainer svg {
+  height: 20px;
+}
+}
+
+@media (max-width: 400px) {
+  .weddingContainer {
+    height: 2rem;
+  }
+
+  .weddingText {
+  font-size: 0.10rem;
+  gap: 0;
+}
+
+.weddingContainer svg {
+  height: 10px;
+}
+  }
