@@ -43,19 +43,25 @@ export default function Dropdown({ category }) {
   return (
     <div className="productsgrid">
       {products.map((product) => (
-        <div
-          key={product.id}
-          className="productcard"
-          onClick={() => navigate(`/product/${product.id}`)}
-          style={{ cursor: "pointer" }}
-        >
-          <img src={product.image} alt={product.name} className="productimage" />
-          <div className="productname">{product.name}</div>
-          <div className="productprice">${product.price.toFixed(2)}</div>
-          <div>
-            <AddToCartButton 
-              product={product} 
-              currentPrice={product.price} 
+        <div key={product.id} className="productcard">
+          {/* Clickable area for navigation */}
+          <div
+            className="productclickarea"
+            onClick={() => navigate(`/product/${product.id}`)}
+            style={{ cursor: "pointer" }}
+          >
+            <img src={product.image} alt={product.name} className="productimage" />
+            <div className="productname">{product.name}</div>
+            <div className="productprice">${product.price.toFixed(2)}</div>
+          </div>
+
+          {/* Add to Cart button - prevent navigation */}
+          <div
+            onClick={(e) => e.stopPropagation()} // stops click from reaching parent
+          >
+            <AddToCartButton
+              product={product}
+              currentPrice={product.price}
             />
           </div>
         </div>
