@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 :root {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -8,10 +10,10 @@
   background-color: #f5f5f5;
 
   --teal: #578088;
-  --gray: #74948C;
-  --beige: #CFB580;
-  --brown: #864E3E;
-  --orange: #CA7C4C;
+  --gray: #74948c;
+  --beige: #cfb580;
+  --brown: #864e3e;
+  --orange: #ca7c4c;
   --white: #f5f5f5;
   --black: #000000;
   --shadow: 0 1px 5px rgba(73, 73, 73, 0.8);
@@ -24,9 +26,26 @@
   -moz-osx-font-smoothing: grayscale;
 
   --navbar-height: 150px;
+  --category-padding: 1rem;
+  --block-bg: #f9f9f9;
 }
 
-/* catalogue section */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  display: block !important;
+  place-items: unset !important;
+}
+
+/* Catalogue page and section styling */
+
 .cataloguepage {
   padding-top: calc(var(--navbar-height) + 1rem);
   width: 100%;
@@ -34,12 +53,10 @@
   height: 100%;
   margin: 0 auto;
   display: block;
-  
 }
 
 .categorysection {
   min-height: 150px;
-  min-width: 1300px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -54,7 +71,7 @@
   padding: 0;
 }
 
-.categorysection h2 {
+.categorysection h3 {
   display: inline-flex;
   justify-content: flex-start;
   background-color: var(--teal);
@@ -66,56 +83,36 @@
   z-index: 2;
 }
 
-/* dropdown section */
-.dropdowncontainer {
-  min-height: 150px;
-  min-width: 1300px;
-  width: 100%;
-  padding: 20px;
+/* Dropdown styling - now in normal flow */
+.dropdown {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  background: transparent;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
 }
 
-/* product specific */
-.productsgrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-template-rows: repeat(2, auto);
-  gap: 1.5rem;
-  padding: 1rem;
+/* Individual pill-style buttons */
+.dropdownitem {
+  background-color: var(--teal);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 20px; /* pill shape */
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
-.productcard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 0.5rem;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.productimage {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 0.5rem;
-  border: 2px solid var(--orange);
-}
-
-.productname {
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0.25rem;
-}
-
-.productprice {
-  color: #555;
-  text-align: center;
-}
-
-.addtocart {
-  color: black;
+.dropdownitem:hover {
   background-color: var(--orange);
-  border-radius: 20px;
-  width: 120px;
-  height: 30px; 
+  transform: translateY(-2px);
+}
+
+/* Show dropdown on hover */
+.categorysection:hover .dropdown {
+  display: flex;
 }
