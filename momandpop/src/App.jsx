@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import ProductDetails from "./pages/ProductDetails";
-import Catalogue from "./pages/Catalogue";
+import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Header from './components/Header';
+import Home from './pages/Home';
+import ProductDetails from './pages/ProductDetails';
+import Catalogue from './pages/Catalogue';
 
 // Missing Catalogue and Cart components
 function Cart() {
@@ -18,10 +18,22 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Catalogue" element={<Catalogue />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/products/:productId" element={<ProductDetails />} />
+        <Route
+          path="/"
+          element={<Home />}
+        />
+        <Route
+          path="/Catalogue"
+          element={<Catalogue />}
+        />
+        <Route
+          path="/cart"
+          element={<Cart />}
+        />
+        <Route
+          path="/products/:productId"
+          element={<ProductDetails />}
+        />
       </Routes>
     </>
   );
