@@ -48,7 +48,7 @@ export default function Dropdown({ category }) {
           {/* Clickable area for navigation */}
           <div
             className="productclickarea"
-            onClick={() => navigate(`/product/${product.id}`)}
+            onClick={() => navigate(`/products/${product.id}`)}
             style={{ cursor: "pointer" }}
           >
             <img src={product.image} alt={product.name} className="productimage" />
