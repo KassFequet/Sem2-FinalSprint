@@ -24,13 +24,13 @@ Each member contributed their expertise to ensure a functional, polished, and us
 ## 📁 Project Structure
  
 src/
-├── components/     # Reusable UI components (e.g. ProductCard, CartItem) & unit tests using Vitest
-├── pages/          # Main routed views (e.g. Home, About, Products, Checkout)
-├── images/         # Images used throughout the page
-├── App.jsx         # Main app logic and route definitions
-├── main.jsx        # App entry point
-momandpop/
-db.json             # Mock data for products and cart
+├── components/     # Reusable UI components (e.g. ProductCard, CartItem) & unit tests using Vitest  
+├── pages/          # Main routed views (e.g. Home, About, Products, Checkout)  
+├── images/         # Images used throughout the page  
+├── App.jsx         # Main app logic and route definitions  
+├── main.jsx        # App entry point  
+momandpop/  
+db.json             # Mock data for products and cart  
  
 ---
  
@@ -83,5 +83,6 @@ Instructor: Levin (UI/UX Design Principles)
 Instructor: Noman (Javascript and React)
  
 Instructor: Dr. Malik (Javascript Review)
+
 
 
