@@ -76,7 +76,7 @@ html {
   margin-top: 20px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: solid 2px rgba(73, 73, 73, 0.2);
 }
 
 .item-id {
@@ -237,5 +237,47 @@ html {
 @media (max-width: 768px) {
   .product-details {
     flex-direction: column;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .product-info .price {
+    font-size: 1.5rem;
+  }
+
+  .product-info .description {
+    font-size: 1.1rem;
+  }
+
+  .product-info .toggle-description {
+    font-size: 0.8rem;
+  }
+
+  .timber-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timber-options button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
   }
 }

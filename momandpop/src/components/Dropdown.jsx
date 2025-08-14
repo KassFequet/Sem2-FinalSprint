@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import AddToCartButton from "./AddToCartButton";
 
 export default function Dropdown({ category }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!category) return;
@@ -12,9 +15,10 @@ export default function Dropdown({ category }) {
       setLoading(true);
       setError(null);
 
+      /* fetch data and encode url with category tag */
       try {
         const response = await fetch(
-          `http://localhost:3000/products?category=${encodeURIComponent(category)}`   /* encodedURIComponent essentially encodes the category variable into the URL so it can be associated with the correct category */
+          `http://localhost:3000/products?category=${encodeURIComponent(category)}`
         );
 
         if (!response.ok) {
@@ -38,37 +42,29 @@ export default function Dropdown({ category }) {
   if (products.length === 0) return <div>No products found in this category.</div>;
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-        gap: "1.5rem",
-        padding: "1rem",
-      }}
-    >
-      {products.map(({ id, image, name, price }) => (
-        <div
-          key={id}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            border: "1px solid #ccc",
-            borderRadius: "8px",
-            padding: "0.5rem",
-            backgroundColor: "#fff",
-            boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
-          }}
-        >
-          <img
-            src={image}
-            alt={name}
-            style={{ width: "150px", height: "auto", marginBottom: "0.5rem" }}
-          />
-          <div style={{ fontWeight: "bold", textAlign: "center", marginBottom: "0.25rem" }}>
-            {name}
+    <div className="productsgrid">
+      {products.map((product) => (
+        <div key={product.id} className="productcard">
+          {/* Clickable area for navigation */}
+          <div
+            className="productclickarea"
+            onClick={() => navigate(`/products/${product.id}`)}
+            style={{ cursor: "pointer" }}
+          >
+            <img src={product.image} alt={product.name} className="productimage" />
+            <div className="productname">{product.name}</div>
+            <div className="productprice">${product.price.toFixed(2)}</div>
           </div>
-          <div style={{ color: "#555", textAlign: "center" }}>${price.toFixed(2)}</div>
+
+          {/* seperate add to cart button so it's unnaffected by the card navigation */}
+          <div
+            onClick={(e) => e.stopPropagation()} // stops click from reaching parent
+          >
+            <AddToCartButton
+              product={product}
+              currentPrice={product.price}
+            />
+          </div>
         </div>
       ))}
     </div>

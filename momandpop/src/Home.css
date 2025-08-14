@@ -173,19 +173,23 @@ iframe {
   gap: 1rem;
   padding: 1rem;
   margin: 1% 0;
-  height: 26rem;
+  height: 27rem;
   width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  max-width: 100vw;
-  overflow-x: auto;
   overflow-y: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  overflow-x: scroll;
+  scrollbar-color: var(--gray) var(--brown);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+
+
+.scrollBar:hover {
+  scrollbar-color: white var(--brown);
+}
+
 
 .itemBox {
   display: flex;
@@ -226,14 +230,253 @@ iframe {
 /* Media Queries */
 /* Only override values that change, previously had many redundancies */
 @media (max-width: 1600px) {
-  .slide { height: 40rem; }
-  .slideContent { margin-top: 6rem; }
-  .momPopContainer { width: 1100px; height: 495px; }
-  .momPopDesc { font-size: 1.45rem; }
-  .momPopDesc h3 { font-size: 1.8rem; }
-  .scrollBar { height: 24rem; }
-  .itemBox { width: 40rem; height: 20rem; }
-  .itemBox img { padding-left: 1rem; }
-  .itemBox p, .itemBox span { font-size: 1.3rem; }
-  .contactInfoContainer { margin-right: 4rem; }
+  .slide {
+    height: 40rem;
+  }
+
+  .slideContent {
+    margin-top: 6rem;
+  }
+
+  .momPopContainer {
+    width: 1100px;
+    height: 495px;
+  }
+
+  .momPopDesc {
+    font-size: 1.35rem;
+  }
+  .momPopDesc h3 {
+    font-size: 1.8rem;
+  }
+
+  .scrollBar {
+    height: 24rem;
+  }
+
+  .itemBox {
+    width: 40rem;
+    height: 20rem;
+  }
+
+  .itemBox img {
+    padding-left: 1rem;
+  }
+
+  .itemBox p {
+    font-size: 1.3rem;
+  }
+
+  .itemBox span {
+    font-size: 1.3rem;
+  }
+
+  .contactInfoContainer {
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slideContent {
+    margin-top: 6rem;
+  }
+
+  .momPopContainer {
+    width: 900px;
+    height: 405px;
+  }
+
+  .momPopDesc {
+    font-size: 1.15rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .momPopDesc h3 {
+    font-size: 1.5rem;
+  }
+
+  .scrollBar {
+    height: 19rem;
+  }
+
+  .itemBox {
+    width: 35rem;
+    height: 15rem;
+  }
+
+  .itemBox img {
+    padding-left: 1rem;
+  }
+
+  .itemBox p {
+    font-size: 1rem;
+  }
+
+  .itemBox span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .slide {
+    height: 30rem;
+  }
+
+  .slideContent {
+    padding: 1rem;
+    width: 25rem;
+    height: 12rem;
+  }
+
+  .slideContent h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .slideContent p {
+    font-size: 1rem;
+  }
+
+  .slideContent button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .momPopContainer {
+    width: 600px;
+    height: 270px;
+  }
+
+  .momPopDesc {
+    font-size: 0.75rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .momPopDesc h3 {
+    font-size: 0.9rem;
+  }
+
+  .contactContainer {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  iframe {
+    border: 2px solid var(--black);
+    width: 400px;
+    height: 300px;
+  }
+
+  .contactInfoContainer {
+    margin-right: 5rem;
+  }
+
+  .contactInfoContainer h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .getInTouchContent {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .storeHoursContent {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .scrollBar {
+    height: 18rem;
+  }
+
+  .itemBox {
+    width: 25rem;
+    height: 14rem;
+    padding: 0;
+  }
+
+  .itemBox img {
+    height: 60%;
+  }
+
+  .itemBox p {
+    font-size: 0.9rem;
+  }
+
+  .itemBox span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+    .slide {
+    padding: 10rem 1rem 1rem 1rem;
+  }
+
+  .momPopContainer {
+    width: 400px;
+    height: 200px;
+  }
+
+  .momPopDesc {
+    font-size: 0.52rem;
+  }
+
+  .momPopDesc h3 {
+    font-size: 0.7rem;
+  }
+
+  .contactContainer {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  iframe {
+    border: 2px solid var(--black);
+    width: 300px;
+    height: 200px;
+  }
+
+  .contactInfoContainer {
+    margin-right: 3rem;
+  }
+
+  .contactInfoContainer h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .getInTouchContent {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .storeHoursContent {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .scrollBar {
+    height: 15rem;
+  }
+
+  .itemBox {
+    width: 20rem;
+    height: 11rem;
+    padding: 0;
+  }
+
+  .itemBox p {
+    font-size: 0.7rem;
+  }
+
+  .itemBox span {
+    font-size: 0.7rem;
+  }
 }

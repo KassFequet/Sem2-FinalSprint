@@ -13,10 +13,6 @@ import Receipt from "./pages/Receipt";
 import ProductDetails from "./pages/ProductDetails";
 
 // Missing Catalogue and Cart components
-function Catalogue() {
-  return <div>Catalogue Page</div>;
-}
-
 function Cart() {
   return <div>Cart Page</div>;
 }
@@ -36,6 +32,22 @@ function App() {
         <Route path="/Support" element={<Support />} />
         <Route path="/Questions" element={<Questions />} />
         <Route path="/receipt" element={<Receipt />} />
+        <Route
+          path="/"
+          element={<Home />}
+        />
+        <Route
+          path="/Catalogue"
+          element={<Catalogue />}
+        />
+        <Route
+          path="/cart"
+          element={<Cart />}
+        />
+        <Route
+          path="/products/:productId"
+          element={<ProductDetails />}
+        />
       </Routes>
       <Footer />
       
