@@ -39,16 +39,15 @@
 
 .categorysection {
   min-height: 150px;
-  min-width: 1300px;
   width: 100%;
+  max-width: 1300px;
   background-size: cover;
   background-position: center;
   border: 1px solid var(--brown);
   margin: 0 auto 1rem;
-  margin-left: 2rem;
   cursor: pointer;
   display: flex;
-  flex-direction: column; /* allows dropdown below title */
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 0;
