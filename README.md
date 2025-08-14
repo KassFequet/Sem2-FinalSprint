@@ -12,7 +12,7 @@ Cameron Boyer – ***
 
 Kassaundra Fequet – Home page including associated components, data files, CSS & test files. 
 
-Stephen Fennelly – ***  
+Stephen Fennelly – Catalogue page, dropdown, and related button/css/text files 
 
 Each member contributed their expertise to ensure a functional, polished, and user-friendly e-commerce application.
 ## 🚀 Tech Stack
@@ -87,6 +87,7 @@ Instructor: Levin (UI/UX Design Principles)
 Instructor: Noman (Javascript and React)
  
 Instructor: Dr. Malik (Javascript Review)
+
 
 
 
