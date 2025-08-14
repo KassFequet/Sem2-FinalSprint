@@ -182,20 +182,23 @@ iframe {
   gap: 1rem;
   padding: 1rem;
   margin: 1% 0;
-  height: 26rem;
+  height: 27rem;
   width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  max-width: 100vw;
-  overflow-x: auto;
   overflow-y: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: auto;
-  scrollbar-color: var(--teal) var(--transparent);
+  overflow-x: scroll;
+  scrollbar-color: var(--gray) var(--brown);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
+
+
+.scrollBar:hover {
+  scrollbar-color: white var(--brown);
+}
+
 
 .itemBox {
   display: flex;
