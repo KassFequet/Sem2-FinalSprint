@@ -1,0 +1,161 @@
+.receipt-page {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)), url(../images/mompopreceipt.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.receipt-container {
+  width: 800px;
+  margin: auto;
+  background-color: #cfcfcfc4;
+  border-radius: 26px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+} 
+
+.center-text {
+    display: flex;
+    justify-content: center;
+}
+
+/* Header */
+.receipt-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  height: auto;
+  background-color: #c4c3c3;
+  padding: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 26px 26px 0px 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.2));
+}
+
+.order-date {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.customer-info {
+    width: 50%;
+}
+
+.order-amount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+/* Items Section */
+.receipt-items {
+  padding: 0px 10px 10px 10px;
+}
+
+
+.receipt-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.receipt-item:last-child {
+  border: none;
+}
+
+.receipt-item img {
+  width: 170px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.85rem;
+  margin-left: 90px;
+  width: 60%;
+}
+
+.item-details p {
+    margin: 0;
+}
+
+.item-name {
+  font-weight: bold;
+  height: auto;
+  width: auto;
+}
+
+.item-id {
+  font-size: 0.7rem !important;
+  color: gray;
+  height: 30px;
+}
+
+.item-qty {
+    position: relative;
+    font-weight: bold;
+    width: 80px;
+    margin-right: 120px;
+    font-size: 0.9rem;
+    float: left;
+}
+
+
+.receipt-item .item-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transform: translate(-10%, 0%);
+
+}
+
+/* Footer */
+.receipt-footer {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.receipt-footer p {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.receipt-footer button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.receipt-footer button:hover {
+  background-color: black;
+  color: white;
+}

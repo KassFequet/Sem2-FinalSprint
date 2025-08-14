@@ -89,7 +89,7 @@ button:focus-visible {
   background-repeat: no-repeat;
   background-position: center;
   width: auto;
-  height: 10rem;
+  /* height: 10rem; */
   margin: 2rem;
 }
 

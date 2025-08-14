@@ -32,10 +32,10 @@ function Contact() {
           "We're here to help! As your neighborhood hardware store, we're committed to providing honest advice, quality products, and friendly service. If you need help with your order, your tools, or your next big project — just reach out!"
         </p>
         <p>
-          Email: support@Mom'sGardenPop'sWorkshop.com
+          Email: contact@momandpop.com
         </p>
         <p>
-          In-Store Help: Visit us at 123 Maple Street, Mon-Sat, 9am-5pm
+          In-Store Help: Visit us at 610 Water Street, Mon-Fri, 9am-7pm, 9am-5pm on Saturdays. Closed Sunday.
         </p>
           
       </div>

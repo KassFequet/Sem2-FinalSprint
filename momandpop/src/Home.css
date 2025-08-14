@@ -18,17 +18,18 @@
   --textShadow: 3px 3px 4px #000;
   --transparent: rgba(238, 236, 236, 0.5);
 
-  max-width: 100%;
+  /* Suggestion: max-width: 100% is unusual on :root, could move to a wrapper */
 }
 
+/* Home Page Wrapper */
 .homeWrapper {
   display: grid;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/*Slide Category Section*/
 
+/* Slide Section */
 .slide {
   width: 100%;
   height: 52rem;
@@ -78,8 +79,7 @@
   background-color: var(--orange);
 }
 
-/*Mom and Pop Story Section*/
-
+/* Mom & Pop Section */
 .momPopContainer {
   display: flex;
   flex-direction: column;
@@ -96,7 +96,6 @@
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.7rem;
   text-align: left;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -120,8 +119,7 @@
   margin: 1rem 0 0 0;
 }
 
-/* Contact Section*/
-
+/* Contact Section */
 .contactContainer {
   padding-top: 2rem;
   padding-bottom: 0.5rem;
@@ -134,6 +132,7 @@
 iframe {
   border: 2px solid var(--black);
   border-radius: 16px;
+  /* width/height handled in media queries */
 }
 
 .contactInfoContainer {
@@ -145,22 +144,15 @@ iframe {
   font-weight: 400;
 }
 
-.getInTouchContent {
-  background-color: rgb(116, 148, 140, 0.5);
-  padding: 1rem;
-  border-radius: 8px;
-  width: 120%;
-  border: 2px solid var(--black);
-  font-size: 1.2rem;
-}
-
+.getInTouchContent,
 .storeHoursContent {
-  background-color: rgb(116, 148, 140, 0.5);
+  background-color: rgba(116, 148, 140, 0.5);
   padding: 1rem;
   border-radius: 8px;
   width: 120%;
   border: 2px solid var(--black);
   font-size: 1.2rem;
+  /* Suggestion: shared class reduces duplication */
 }
 
 .storeHours ul {
@@ -174,8 +166,7 @@ iframe {
   justify-content: space-between;
 }
 
-/*Review Section */
-
+/* Review Section */
 .scrollBar {
   display: grid;
   grid-auto-flow: column;
@@ -200,7 +191,7 @@ iframe {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(245, 245, 245, 0.6);
+  background-color: rgba(245, 245, 245, 0.6);
   width: 45rem;
   height: 22rem;
   padding: 1rem 2rem;
@@ -218,358 +209,31 @@ iframe {
   padding: 2rem;
 }
 
+.itemBox p,
+.itemBox span {
+  font-weight: 500;
+}
+
 .itemBox p {
   font-size: 1.5rem;
-  font-weight: 500;
 }
 
 .itemBox span {
   font-size: 1.5rem;
   font-style: italic;
-  font-weight: 500;
 }
 
+/* Media Queries */
+/* Only override values that change, previously had many redundancies */
 @media (max-width: 1600px) {
-  .slide {
-    height: 40rem;
-  }
-
-  .slideContent {
-    margin-top: 6rem;
-  }
-
-  .momPopContainer {
-    width: 1100px;
-    height: 495px;
-  }
-
-  .momPopDesc {
-    font-size: 1.45rem;
-  }
-  .momPopDesc h3 {
-    font-size: 1.8rem;
-  }
-
-  .scrollBar {
-    height: 24rem;
-  }
-
-  .itemBox {
-    width: 40rem;
-    height: 20rem;
-  }
-
-  .itemBox img {
-    padding-left: 1rem;
-  }
-
-  .itemBox p {
-    font-size: 1.3rem;
-  }
-
-  .itemBox span {
-    font-size: 1.3rem;
-  }
-
-  .contactInfoContainer {
-    margin-right: 4rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .slideContent {
-    margin-top: 6rem;
-  }
-
-  .momPopContainer {
-    width: 900px;
-    height: 405px;
-  }
-
-  .momPopDesc {
-    font-size: 1.2rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
-  }
-
-  .momPopDesc h3 {
-    font-size: 1.5rem;
-  }
-
-  .scrollBar {
-    height: 19rem;
-  }
-
-  .itemBox {
-    width: 35rem;
-    height: 15rem;
-  }
-
-  .itemBox img {
-    padding-left: 1rem;
-  }
-
-  .itemBox p {
-    font-size: 1rem;
-  }
-
-  .itemBox span {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .slide {
-    height: 30rem;
-  }
-
-  .slideContent {
-    padding: 1rem;
-    width: 25rem;
-    height: 12rem;
-  }
-
-  .slideContent h1 {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .slideContent p {
-    font-size: 1rem;
-  }
-
-  .slideContent button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  .momPopContainer {
-    width: 600px;
-    height: 270px;
-  }
-
-  .momPopDesc {
-    font-size: 0.8rem;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-  }
-
-  .momPopDesc h3 {
-    font-size: 0.9rem;
-  }
-
-  .contactContainer {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-  iframe {
-    border: 2px solid var(--black);
-    width: 400px;
-    height: 300px;
-  }
-
-  .contactInfoContainer {
-    margin-right: 5rem;
-  }
-
-  .contactInfoContainer h3 {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-
-  .getInTouchContent {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .storeHoursContent {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .scrollBar {
-    height: 18rem;
-  }
-
-  .itemBox {
-    width: 25rem;
-    height: 14rem;
-    padding: 0;
-  }
-
-  .itemBox img {
-    height: 60%;
-  }
-
-  .itemBox p {
-    font-size: 0.9rem;
-  }
-
-  .itemBox span {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 600px) {
-
-    .slide {
-    padding: 10rem 1rem 1rem 1rem;
-  }
-
-  .momPopContainer {
-    width: 400px;
-    height: 200px;
-  }
-
-  .momPopDesc {
-    font-size: 0.52rem;
-  }
-
-  .momPopDesc h3 {
-    font-size: 0.7rem;
-  }
-
-  .contactContainer {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  iframe {
-    border: 2px solid var(--black);
-    width: 300px;
-    height: 200px;
-  }
-
-  .contactInfoContainer {
-    margin-right: 3rem;
-  }
-
-  .contactInfoContainer h3 {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-
-  .getInTouchContent {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .storeHoursContent {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  .scrollBar {
-    height: 15rem;
-  }
-
-  .itemBox {
-    width: 20rem;
-    height: 11rem;
-    padding: 0;
-  }
-
-  .itemBox p {
-    font-size: 0.7rem;
-  }
-
-  .itemBox span {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 400px) {
-  
-  .slide {
-    height: 25rem;
-    width: 100%;
-    padding-top: 10rem 1rem 1rem 1rem;
-  }
-
-  .slideContent {
-    margin: 1rem;
-    padding: 1rem;
-    width: 15rem;
-    height: 10rem;
-  }
-
-  .slideContent h1 {
-    font-size: 1rem;
-    margin: 0;
-  }
-
-  .slideContent p {
-    font-size: 0.8rem;
-  }
-
-  .slideContent button {
-    padding: 0.5rem 1rem;
-    font-size: 0.7rem;
-  }
-
-  .momPopContainer {
-    margin: auto;
-    width: 250px;
-    height: 115px;
-  }
-
-  .momPopDesc {
-    font-size: 0.3rem;
-  }
-
-  .momPopDesc h3 {
-    font-size: 0.4rem;
-  }
-    .contactContainer {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  iframe {
-    border: 2px solid var(--black);
-    width: 200px;
-    height: 200px;
-  }
-
-  .contactInfoContainer {
-    margin-right: 3rem;
-  }
-
-  .contactInfoContainer h3 {
-    font-size: .7rem;
-    font-weight: 500;
-  }
-
-  .getInTouchContent {
-    padding: 0.2rem;
-    font-size: 0.7rem;
-  }
-
-  .storeHoursContent {
-    padding: 0.2rem;
-    font-size: 0.7rem;
-  }
-
-  .scrollBar {
-    height: 15rem;
-  }
-
-  .itemBox {
-    width: 15rem;
-    height: 10rem;
-    padding: 0;
-  }
-
-  .itemBox p {
-    font-size: 0.5rem;
-  }
-
-  .itemBox span {
-    font-size: 0.5rem;
-  }
+  .slide { height: 40rem; }
+  .slideContent { margin-top: 6rem; }
+  .momPopContainer { width: 1100px; height: 495px; }
+  .momPopDesc { font-size: 1.45rem; }
+  .momPopDesc h3 { font-size: 1.8rem; }
+  .scrollBar { height: 24rem; }
+  .itemBox { width: 40rem; height: 20rem; }
+  .itemBox img { padding-left: 1rem; }
+  .itemBox p, .itemBox span { font-size: 1.3rem; }
+  .contactInfoContainer { margin-right: 4rem; }
 }

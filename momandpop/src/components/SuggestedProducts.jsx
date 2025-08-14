@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../Styles/Suggested.css';
 import { Link } from 'react-router-dom';
 
 const SuggestedProducts = ({ currentProductId, currentProductCategory }) => {

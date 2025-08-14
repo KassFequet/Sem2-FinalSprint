@@ -8,6 +8,8 @@ import Contact from "./pages/Contact";
 import Support from "./pages/Support"
 import Questions from "./pages/Questions"
 import Home from "./pages/Home";
+import Receipt from "./pages/Receipt";
+
 import ProductDetails from "./pages/ProductDetails";
 
 // Missing Catalogue and Cart components
@@ -33,6 +35,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Support" element={<Support />} />
         <Route path="/Questions" element={<Questions />} />
+        <Route path="/receipt" element={<Receipt />} />
       </Routes>
       <Footer />
       

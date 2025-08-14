@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <hr/>
         <div className="footer-bottom">
-            <p>© 2023 Mom's Garden and Pop's Workshop. All rights reserved.</p>
+            <p>© 2025 Mom's Garden and Pop's Workshop. All rights reserved.</p>
             <img src={badge} alt="Mom's Garden and Pop's Workshop Logo" className="footer-logo" />
 
 

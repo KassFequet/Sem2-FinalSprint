@@ -114,15 +114,15 @@ export default function ProductDetails() {
           <AddToCartButton
             product={product}
             currentPrice={currentPrice}
-            quantity={1}
+            quantityInStock={1}
           />
           <p
             className={`stock ${
-              product.quantity > 0 ? 'in-stock' : 'out-of-stock'
+              product.quantityInStock > 0 ? 'in-stock' : 'out-of-stock'
             }`}
           >
-            {product.quantity > 0
-              ? `In Stock: ${product.quantity}`
+            {product.quantityInStock > 0
+              ? `In Stock: ${product.quantityInStock}`
               : 'Out of Stock'}
           </p>
         </div>

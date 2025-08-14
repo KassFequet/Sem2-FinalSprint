@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Wedding from "../components/WeddingBanner";
+import SuggestedProducts from '../components/SuggestedProducts.jsx';
 import "../Styles/Checkout.css";
 
 function Checkout() {
@@ -8,14 +10,41 @@ function Checkout() {
   const [phone, setPhone] = useState("");
   const navigate = useNavigate();
 
-    const generateItemNumber = (id) => {
+  // Generate a unique item number
+  const generateItemNumber = (id) => {
     const seed = parseInt(id) * 12345;
     return 10000 + (seed % 90000);
   };
-  // Load cart on mount
+
+  // Show alert
+  const showAlert = (message) => {
+    const alertBar = document.getElementById("alert-bar");
+    const alertMessage = document.getElementById("alert-message");
+    alertMessage.textContent = message;
+    alertBar.style.opacity = 1;
+
+    setTimeout(() => {
+      alertBar.style.opacity = 0;
+    }, 2000);
+  };
+
+  // Format phone number as (###)###-####
+  const formatPhoneNumber = (phone) => {
+    const digits = phone.replace(/\D/g, "");
+    if (digits.length === 10) {
+      return `(${digits.slice(0, 3)})${digits.slice(3, 6)}-${digits.slice(6)}`;
+    }
+    return phone;
+  };
+
+  // Load cart from localStorage
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
-    setCart(storedCart);
+    const initializedCart = storedCart.map(item => ({
+      ...item,
+      quantity: item.quantity || 1
+    }));
+    setCart(initializedCart);
   }, []);
 
   // Update cart in state + localStorage
@@ -47,27 +76,52 @@ function Checkout() {
   const taxes = subtotal * taxRate;
   const total = subtotal + taxes;
 
+  // Handle Buy Now
   const handleBuyNow = () => {
     if (!name || !phone) {
-      alert("Please fill out your name and phone number.");
+      showAlert("Please fill out your name and phone number.");
       return;
     }
-    alert("Order placed! Thank you.");
+
+    // Validate 10-digit phone
+    const phoneDigits = phone.replace(/\D/g, "");
+    if (phoneDigits.length !== 10) {
+      showAlert("Phone number must be 10 digits.");
+      return;
+    }
+
+    if (cart.length === 0) {
+      showAlert("Your cart is empty!");
+      return;
+    }
+
+    const orderData = {
+      date: new Date().toLocaleString(),
+      name,
+      phone: formatPhoneNumber(phone),
+      items: cart.map(item => ({
+        ...item,
+        quantity: item.quantity || 1,
+        itemNumber: generateItemNumber(item.id)
+      })),
+    };
+
     handleClearCart();
-    // Not mad yet 
-    navigate("/order-confirmation");
+    navigate("/Receipt", { state: orderData });
   };
 
   return (
     <>
       <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet" />
       <div className="checkout-box">
-        <a
-          className="back-link"
-          href="/catalogue"
+        <div 
+          className="alert-bar" 
+          style={{ opacity: 0 }} 
+          id="alert-bar"
         >
-          ← Back to Catalogue
-        </a>
+          <p id="alert-message"></p>
+        </div>
+        <a className="back-link" href="/catalogue">← Back to Catalogue</a>
         <div className="check-holder">
           {/* LEFT: CART ITEMS */}
           <div className="checkout-left">
@@ -75,54 +129,49 @@ function Checkout() {
             <button className="clear-cart" onClick={handleClearCart}>Clear Cart</button>
             <div className="items-holder">
               <div className="checkout-items">
-              {cart.length === 0 ? (
-                <p>The cart is empty</p>
-              ) : (
-                cart.map(item => (
-                  <div className="cart-item" key={item.id}>
-                    <div className="item-image">
-                      <img src={item.image} alt={item.name}  />
-                    </div>
-                    <div className="item-details">
-                      <div className="item-info-box">
-                        <div className="item-info">
-                          <h3>{item.name}</h3>
-                          <p className="item-num">Item # {generateItemNumber(item.id)}</p>
-                          <p className="item-desc">{item.description}</p>
-                        </div>
-                        <div className="item-quantity">
-                          <label htmlFor={`quantity-${item.id}`}>
-                            <span className="quantity">Qty</span>
-                          </label>
-                          <select
-                            id={`quantity-${item.id}`}
-                            name="quantity"
-                            value={item.quantity} // <-- show the actual cart quantity
-                            onChange={(e) => updateQuantity(item.id, Number(e.target.value))} // <-- update when changed
-                          >
-                            {[1, 2, 3, 4, 5].map(qty => (
-                              <option key={qty} value={qty}>
-                                {qty}
-                              </option>
-                            ))}
-                          </select>
-                        </div>
-
-
+                {cart.length === 0 ? (
+                  <p>The cart is empty</p>
+                ) : (
+                  cart.map(item => (
+                    <div className="cart-item" key={item.id}>
+                      <div className="item-image">
+                        <img src={item.image} alt={item.name} />
                       </div>
-                      <div className="items-right">
-                        <div className="item-price">
-                          <p>${item.price.toFixed(2)}</p>
+                      <div className="item-details">
+                        <div className="item-info-box">
+                          <div className="item-info">
+                            <h3>{item.name}</h3>
+                            <p className="item-num">Item # {generateItemNumber(item.id)}</p>
+                          </div>
+                          <div className="item-quantityInStock">
+                            <label htmlFor={`quantity-${item.id}`}>
+                              <span className="quantity">Qty</span>
+                            </label>
+                            <select
+                              id={`quantity-${item.id}`}
+                              value={item.quantity}
+                              onChange={(e) => updateQuantity(item.id, Number(e.target.value))}
+                            >
+                              {Array.from({ length: Math.min(item.quantityInStock, 99) }, (_, i) => i + 1).map(qty => (
+                                <option key={qty} value={qty}>{qty}</option>
+                              ))}
+                            </select>
+                          </div>
                         </div>
-                        <button className="remove-item" onClick={() => handleRemoveItem(item.id)}><h3>Remove Item</h3></button>
+                        <div className="items-right">
+                          <div className="item-price">
+                            <p>${item.price.toFixed(2)}</p>
+                          </div>
+                          <button className="remove-item" onClick={() => handleRemoveItem(item.id)}>
+                            <h3>Remove Item</h3>
+                          </button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))
-              )}
+                  ))
+                )}
               </div>
             </div>
-
           </div>
 
           {/* RIGHT: ORDER INFO */}
@@ -139,11 +188,11 @@ function Checkout() {
               <h2>Order Summary</h2>
               <hr />
               <div className="receipt">
-                <p>Order Subtotal: ${subtotal.toFixed(2)}</p>
-                <p>Taxes: ${taxes.toFixed(2)}</p>
+                <p>Order Subtotal: <span className="right-text">${subtotal.toFixed(2)}</span></p>
+                <p>Taxes: <span className="right-text">${taxes.toFixed(2)}</span></p>
               </div>
               <hr />
-              <p><strong>Order Total: ${total.toFixed(2)}</strong></p>
+              <p><strong>Order Total: <span className="right-text">${total.toFixed(2)}</span></strong></p>
               <div className="checkout-buttons">
                 <button className="buy-now" onClick={handleBuyNow}>Buy Now</button>
                 <button
@@ -153,9 +202,18 @@ function Checkout() {
                   E-transfer
                 </button>
               </div>
-            </div>
+              </div>
           </div>
         </div>
+              <div className="product-suggestions-section">
+                <h2>People Who Bought this Item also Bought</h2>
+                <SuggestedProducts 
+                    currentProductId={cart[0]?.id || ""} 
+                    currentProductCategory={cart[0]?.category || ""} 
+                />
+              </div>
+              <Wedding />
+              
       </div>
     </>
   );
