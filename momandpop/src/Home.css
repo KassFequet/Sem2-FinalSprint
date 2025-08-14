@@ -190,7 +190,8 @@ iframe {
   overflow-x: auto;
   overflow-y: hidden;
   -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: auto;
+  scrollbar-color: var(--teal) var(--transparent);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
