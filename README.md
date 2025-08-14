@@ -4,11 +4,11 @@ A fully functional e-commerce website built as part of a second-semester Softwar
 
 #  🧑‍💻🧑‍💻👩‍💻🧑‍💻 Team Members
 
-This project was developed collaboratively by a team of four students:
-- Brandon Maloney – ***
-- Cameron Boyer – ***
-- Kassaundra Fequet – Home page including associated components, data files, CSS & test files.
-- Stephen Fennelly – ***
+This project was developed collaboratively by a team of four students:  
+Brandon Maloney – ***  
+Cameron Boyer – ***  
+Kassaundra Fequet – Home page including associated components, data files, CSS & test files.  
+Stephen Fennelly – ***  
 
 Each member contributed their expertise to ensure a functional, polished, and user-friendly e-commerce application.
 ## 🚀 Tech Stack
@@ -83,6 +83,7 @@ Instructor: Levin (UI/UX Design Principles)
 Instructor: Noman (Javascript and React)
  
 Instructor: Dr. Malik (Javascript Review)
+
 
 
 
