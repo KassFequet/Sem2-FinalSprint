@@ -30,7 +30,6 @@
 .cataloguepage {
   padding-top: calc(var(--navbar-height) + 1rem);
   width: 100%;
-  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
   display: block;
@@ -45,7 +44,6 @@
   background-position: center;
   border: 1px solid var(--brown);
   margin: 0 auto 1rem;
-  margin-left: 2rem;
   cursor: pointer;
   display: flex;
   flex-direction: column; /* allows dropdown below title */
