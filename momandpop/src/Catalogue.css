@@ -99,6 +99,7 @@
   height: 150px;
   margin-bottom: 0.5rem;
   border: 2px solid var(--orange);
+  border-radius: 20px;
 }
 
 .productname {
