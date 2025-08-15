@@ -144,7 +144,6 @@
       "quantity": 50,
       "category": "wood working tools"
     },
-
     {
       "id": "17",
       "name": "Brushes Variety Pack",
@@ -362,5 +361,34 @@
       "category": "seeds"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "27",
+      "name": "Shears",
+      "price": 22.99,
+      "quantityInStock": 1,
+      "image": "/src/images/Products/shears.jpg"
+    },
+    {
+      "id": "26",
+      "name": "Pick",
+      "price": 19.99,
+      "quantityInStock": 1,
+      "image": "/src/images/Products/pick.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Wood Glue",
+      "price": 7.5,
+      "quantityInStock": 1,
+      "image": "/src/images/Products/woodGlue.jpg"
+    },
+    {
+      "id": "2",
+      "name": "2x6 Timber",
+      "price": 6.75,
+      "quantityInStock": 1,
+      "image": "/src/images/Products/2x6.jpg"
+    }
+  ]
 }

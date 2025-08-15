@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 172px;
+  width: 99.2vw;
 }
 
 /* Logo */
@@ -57,12 +58,11 @@
   width: 600px;
   height: 0px;
   overflow: hidden; 
-  background: white;
   color: black;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
   opacity: 0;
-
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   grid-template-rows: repeat(2, auto);    /* 2 rows */

@@ -12,7 +12,7 @@ const AddToCartButton = ({ product }) => {
     setAdded(!!existingItem);
   }, [product.id]);
 
-  const handleToggleCart = () => {
+  const handleToggleCart = async () => {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
     if (!added) {
@@ -20,7 +20,7 @@ const AddToCartButton = ({ product }) => {
       const cartItem = {
         id: product.id,
         name: product.name,
-        price: currentPrice,
+        price: product.price, // fixed from currentPrice
         quantityInStock: 1,
         image: product.image,
       };
@@ -33,6 +33,7 @@ const AddToCartButton = ({ product }) => {
         });
 
         if (response.ok) {
+          localStorage.setItem('cart', JSON.stringify([...cartItems, cartItem])); // keep localStorage updated
           setAdded(true);
         } else {
           console.error('Failed to add to cart');

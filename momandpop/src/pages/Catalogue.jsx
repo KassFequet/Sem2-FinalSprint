@@ -12,7 +12,7 @@ export default function Catalogue() {
         <div
           key={index}
           className="category-wrapper"
-          style={{ marginBottom: "1rem" }}
+
           onMouseEnter={() => setHoveredCategoryIndex(index)}
           onMouseLeave={() => setHoveredCategoryIndex(null)}
         >

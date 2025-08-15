@@ -9,6 +9,7 @@ import Support from "./pages/Support"
 import Questions from "./pages/Questions"
 import Home from "./pages/Home";
 import Receipt from "./pages/Receipt";
+import Catalogue from "./pages/Catalogue"
 
 import ProductDetails from "./pages/ProductDetails";
 
