@@ -13,7 +13,7 @@ import Catalogue from "./pages/Catalogue"
 
 import ProductDetails from "./pages/ProductDetails";
 
-// Missing Catalogue and Cart components
+
 function Cart() {
   return <div>Cart Page</div>;
 }

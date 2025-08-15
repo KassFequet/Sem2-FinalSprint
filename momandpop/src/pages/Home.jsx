@@ -41,7 +41,7 @@ function Home() {
             surrounded by the luscious plants she lovingly grew, while Pop
             worked away in his shed, turning wood into hand-crafted treasures.
           </p>
-          <p className="desc2">
+          <p className="desc2" id="map">
             As the years passed their shared passions blossomed into a business
             rooted in love and creativity. What began as a weekend pastime is
             now a small family shop that offers everything you need to find the

@@ -9,11 +9,12 @@ const Contact = () => {
           width="600"
           height="475"
           allowFullScreen=""
+          title="location"
           loading="lazy"
         ></iframe>
       </section>
 
-      <section className="contactInfoContainer">
+      <section className="contactInfoContainer" >
         <section className="getInTouch">
           <h3>Get In Touch</h3>
           <div className="getInTouchContent">

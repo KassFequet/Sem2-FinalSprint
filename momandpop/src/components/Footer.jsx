@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="links-container"> 
                     <div className="footer-links">
                         <Link to="/Contact" className="footer-link">Contact Us</Link>
-                        <Link to="/#map" className="footer-link">Store Location</Link>
+                        <a href="#map" className="footer-link">Store Location</a>
                         <Link to="/products" className="footer-link">Product Page</Link>
                         <Link to="/Questions" className="footer-link">Questions Answered</Link>
                         <Link to="/#reviews" className="footer-link">Reviews</Link>
