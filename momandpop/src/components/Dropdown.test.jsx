@@ -5,64 +5,68 @@ import Dropdown from "./Dropdown";
 import { BrowserRouter } from "react-router-dom";
 
 // ----- MOCKING NAVIGATION -----
-
-// Create a spy function for navigation
 const mockNavigate = vi.fn();
 
-// Mock the react-router-dom module so we can replace useNavigate with our spy
 vi.mock("react-router-dom", async () => {
-  const actual = await vi.importActual("react-router-dom"); // Keep real functionality for everything else
+  const actual = await vi.importActual("react-router-dom");
   return {
     ...actual,
-    useNavigate: () => mockNavigate, // Replace useNavigate with our spy
+    useNavigate: () => mockNavigate,
   };
 });
 
-// ----- MOCKING FETCH -----
+// ----- MOCKING IMAGE IMPORTS -----
+// Prevents Vitest from trying to actually load image files
+vi.mock("../images/addtocart.png", () => ({ default: "addtocart.png" }));
+vi.mock("../images/addedtocart.png", () => ({ default: "addedtocart.png" }));
 
-// Example mock product data
+// ----- MOCKING FETCH -----
+global.fetch = vi.fn();
+
 const mockProducts = [
   { id: 1, name: "Test Product", price: 9.99, image: "test.jpg" },
 ];
 
-// Replace global fetch with a spy function
-global.fetch = vi.fn();
-
 describe("Dropdown component", () => {
   beforeEach(() => {
-    // Reset all mocks before each test to avoid test bleed
     vi.clearAllMocks();
   });
 
   it("shows loading state, then products", async () => {
-    // Mock fetch to return a successful response
+    // First call = products
     fetch.mockResolvedValueOnce({
       ok: true,
       json: async () => mockProducts,
     });
+    // Second call = cart check
+    fetch.mockResolvedValueOnce({
+      ok: true,
+      json: async () => [],
+    });
 
-    // Render component inside BrowserRouter (needed for navigation)
     render(
       <BrowserRouter>
         <Dropdown category="Test Category" />
       </BrowserRouter>
     );
 
-    // Step 1: Assert loading message is shown
-    expect(screen.getByText(/Loading products/i)).toBeInTheDocument();
+    expect(screen.getByText(/loading products/i)).toBeInTheDocument();
 
-    // Step 2: Wait until product appears
     await waitFor(() =>
       expect(screen.getByText("Test Product")).toBeInTheDocument()
     );
   });
 
   it("navigates when clicking a product", async () => {
-    // Mock fetch again for this test
-    fetch.mockResolvedValueOnce({
-      ok: true,
-      json: async () => mockProducts,
-    });
+    fetch
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => mockProducts,
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => [],
+      });
 
     render(
       <BrowserRouter>
@@ -70,23 +74,25 @@ describe("Dropdown component", () => {
       </BrowserRouter>
     );
 
-    // Wait for product to appear
     await waitFor(() =>
       expect(screen.getByText("Test Product")).toBeInTheDocument()
     );
 
-    // Simulate clicking the product name
     fireEvent.click(screen.getByText("Test Product"));
 
-    // Assert navigation was called with the right route
-    expect(mockNavigate).toHaveBeenCalledWith("/product/1");
+    expect(mockNavigate).toHaveBeenCalledWith("/products/1");
   });
 
   it("does not navigate when clicking Add to Cart", async () => {
-    fetch.mockResolvedValueOnce({
-      ok: true,
-      json: async () => mockProducts,
-    });
+    fetch
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => mockProducts,
+      })
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => [],
+      });
 
     render(
       <BrowserRouter>
@@ -98,18 +104,16 @@ describe("Dropdown component", () => {
       expect(screen.getByText("Test Product")).toBeInTheDocument()
     );
 
-    // Find the Add to Cart button (must be a <button> in the component)
-    const addToCartBtn = screen.getByRole("button", { name: /add to cart/i });
+    const addToCartBtn = screen.getByRole("button", {
+      name: /add to cart/i,
+    });
 
-    // Click Add to Cart
     fireEvent.click(addToCartBtn);
 
-    // Assert navigation did NOT happen
     expect(mockNavigate).not.toHaveBeenCalled();
   });
 
   it("shows error message if fetch fails", async () => {
-    // Mock fetch to return an unsuccessful response
     fetch.mockResolvedValueOnce({
       ok: false,
     });
@@ -120,11 +124,8 @@ describe("Dropdown component", () => {
       </BrowserRouter>
     );
 
-    // Wait for error message to appear
     await waitFor(() =>
-      expect(
-        screen.getByText(/failed to fetch products/i)
-      ).toBeInTheDocument()
+      expect(screen.getByText(/failed to fetch products/i)).toBeInTheDocument()
     );
   });
 });
